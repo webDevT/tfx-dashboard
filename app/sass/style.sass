@@ -1,0 +1,1999 @@
+@import "vars"
+@import "fonts"
+
+//start global style
+body 
+	font-family: $poppins
+	font-size: 14px
+	background: #e8eaf5
+	font-weight: $reg
+	color: $blue-text
+	font-weight: 400
+	margin-bottom: 0
+	position: relative
+	min-height: 100vh
+	padding-bottom: 37px
+ul 
+	list-style: none
+	padding-left: 0
+	margin-bottom: 0
+a,
+a:hover 
+	text-decoration: none
+button,
+button:hover 
+	outline: none 
+	outline: none
+button:focus 
+	outline: none
+.wrapper
+	max-width: 970px 
+	margin: 0 auto
+.link-aqua
+	color: $aqua
+	text-decoration: underline
+	font-family: $sans1-bold
+.link-aqua:hover 
+	color: #319286
+	text-decoration: underline
+
+//end global style
+
+//start top header style
+.top-header 
+	background: $blue
+	min-height: 60px
+	width: 100%
+.button 
+	display: flex 
+	justify-content: center 
+	align-items: center
+	font-family: $sans3-semi-bold
+	font-weight: 600
+	a 
+		width: 100% 
+		height: 100% 
+		display: flex 
+		justify-content: center 
+		align-items: center
+		font-family: $sans3-semi-bold
+		font-weight: 600
+.button--aqua
+	background: $aqua 
+	color: #fff 
+	a
+		color: #fff
+.button--taransparent-blue 
+	border: 1px solid $blue 
+	color: $blue 
+	a 
+		color: $blue
+//end top header style
+
+//start header style
+.header 
+	background: #f8f8f8
+	font-size: 16px 
+	font-weight: $semi-bold
+	font-family: $titili-semi-bold
+	font-weight: 600
+	box-shadow: 2.121px 2.121px 3.92px 0.08px rgba(0, 0, 0, 0.1)
+	.wrapper 
+		display: flex 
+		justify-content: space-between 
+		align-items: center
+.header__user
+	border-top: 1px solid #00eea7
+	border-left: 1px solid #00c48a
+	border-bottom: 1px solid #008a61
+	border-right: 1px solid #00b67f
+	img 
+		width: 30px 
+		height: 30px
+.header__user-wrap 
+	display: flex 
+	align-items: center
+	width: 100% 
+	height: 100%
+	border-top: 1px solid #00d495
+	border-left: 1px solid #00b67f
+	border-bottom: 1px solid #00a171
+	border-right: 1px solid #00b67f
+
+	padding: 15px 25px
+
+
+	
+.header__menu
+	ul 
+		display: flex
+		li 
+			padding: 0 15px 
+			margin-right: 40px
+.header__menu ul li:first-child 
+	padding-left: 0
+.header__user
+	display: flex
+	align-items: center
+	background: $aqua
+	color: #fff
+	transition: all .3s
+	img
+		margin-right: 5px
+.header__user:hover 
+	color: #fff
+	background: $aqua-dark
+	border-right: 1px solid #068a62
+	border-left: 1px solid #05996c
+	border-bottom: 1px solid #027d58
+	border-top: 1px solid #00c68a
+	.header__user-wrap
+		border-right: 1px solid #068a62 
+		border-left: 1px solid #068a62
+		border-bottom: 1px solid #04825c
+		border-top: 1px solid #03ab78
+.menu-link
+	color: #a1adbb
+	position: relative
+	transition: all .5s
+	display: flex
+	align-items: center 
+	svg 
+		width: 25px
+		height: 25px
+		margin-right: 5px
+.menu-link:hover, 
+.menu-link.active
+	color: $blue
+.header-svg-green
+	fill: #a1adbb
+.header-svg-dark-green
+	fill:#7f8993
+.menu-link:hover,
+.menu-link.active
+	.header-svg-green
+		fill: #00b17c
+	.header-svg-dark-green
+		fill: #009b63
+//end header style
+
+//start item box
+.item-box 
+	width: 970px
+	//max-width: 93.750vw
+	background: #fff
+	margin: 0 auto
+	margin-top: 10px
+	padding: 11px
+	box-shadow: 0px 2px 6px 0px rgba(0, 0, 0, 0.2)
+	border-radius: 2px
+.text-box__title
+	padding-top: 9px
+	padding-left: 9px
+	padding-bottom: 20px
+	
+.text
+	font-family: $poppins
+	color: $blue-text
+	font-weight: 400
+	span 
+		font-weight: 600
+
+
+.item-box__header
+	display: flex 
+	justify-content: space-between
+.open-new
+	display: flex
+	align-items: center 
+	cursor: pointer
+	
+	svg 
+		width: 25px 
+		height: 25px
+		margin-left: 10px
+		.add-cls-1 
+			fill: #c2ae38
+		.add-cls-2 
+			fill: #064a5f
+		.add-cls-4
+			fill:#fff
+	svg:hover
+		.add-cls-1 
+			fill: #c2ae38
+		.add-cls-2 
+			fill: #05303a
+		.add-cls-4
+			fill:#fff
+.open-new
+	font-family: $titili-reg 
+	font-weight: $reg
+
+.open-new:hover 
+	color: $blue
+	font-weight: 600
+	text-decoration: underline
+.col-title
+	text-transform: uppercase
+	font-size: 13px
+	font-family: $titili-semi-bold
+	font-weight: 600
+
+.item-box__col--money-img
+	width: 50px 
+	height: 50px
+	margin-right: 11px
+.item-box__row
+	display: flex 
+	justify-content: space-around
+.item-box__col--money
+	display: flex
+	padding-right: 25px
+	.item-box__col-wrapper
+		display: flex 
+		align-items: center
+	.col-title 
+		font-size: 14px
+.item-box__col--money-value
+	font-size: 28px 
+	font-weight: 700
+	color: $aqua
+	line-height: 0.9
+
+.item-box__col
+	//margin-bottom: 10px
+	position: relative
+	display: flex 
+	justify-content: center 
+	align-items: center
+	width: 100%
+.item-box__col:first-child 
+	width: 15.139vw
+.item-box__col:after 
+	content: ''
+	position: absolute 
+	height: 100% 
+	width: 4px 
+	top: 0 
+	right: 0
+	border-radius: 4px
+	display: block 
+	background: rgb(217, 219, 225)
+.item-box__row .item-box__col:last-child:after 
+	display: none
+.col-text
+	font-weight: 600
+	font-size: 16px
+.col-title.col-title--aqua
+	color: $aqua
+.item-box__col--detail .col-title.col-title--aqua:hover 
+	color: #319286
+	text-decoration: underline
+.col-link
+	text-align: center 
+	font-family: $titili-reg
+	font-weight: 400
+	text-decoration: underline
+	font-size: 14px
+	line-height: 1.2
+.col-link:hover 
+	font-family: $titili-semi-bold
+	font-weight: 600
+.col-wrap
+	display: flex
+	justify-content: space-between
+.mobile-buttons
+	display: none
+.row-two-col
+	display: flex
+	justify-content: space-between
+	width: 970px
+	max-width: 93.750vw
+	margin: 0 auto
+	.item-box.item-box--top
+		width: 75%
+		margin-left: 0
+	.item-box__col:nth-child(2)
+		max-width: 90px
+	.item-box__col:last-child
+		max-width: 90px
+.col-title--blue
+	color: $blue
+.col-title--blue:hover 
+	color: $blue 
+	text-decoration: underline
+.contact-wrapper
+	width: 25%
+	margin-right: 0
+	margin-left: 10px
+	background: url('../img/contact-bg.png')
+	background-size: cover
+	background-repeat: no-repeat
+.contact-wrapper__header
+	display: flex
+	align-items: center
+	justify-content: center
+
+	img 
+		width: 19px
+		margin-right: 8px
+	.text 
+		color: #fff
+		font-family: $titili-reg
+		font-weight: $reg
+//end item box
+.contact-wrapper__buttons
+	display: flex 
+	justify-content: space-between
+	padding-top: 10px
+.contact-wrapper__button
+	width: 49%
+	text-align: center
+	font-size: 14px
+	font-weight: 400
+	padding: 7px
+	line-height: 1
+
+	img 
+		margin-bottom: 5px
+		width: 23px
+.contact-wrapper__button:hover 
+	font-weight: 500
+.contact-wrapper__button--aqua
+	background: $aqua
+	color: #fff
+	transition: all 0.3s
+	border-top: 2px solid #00ffb3
+	border-left: 2px solid #00c48a
+	border-bottom: 2px solid #008a61
+	border-right: 2px solid #00b67f
+.contact-wrapper__button--aqua:hover
+	background: $aqua-dark
+	border-top: 2px solid #00d494
+	border-left: 2px solid #05996c
+	border-bottom: 2px solid #027d58
+	border-right: 2px solid #068a62
+.contact-wrapper__button--aqua:hover 
+	color: #fff
+.contact-wrapper__button--grey
+	background-image: linear-gradient( -27deg, rgb(220,220,220) 0%, rgb(238,238,238) 67%, rgb(255,255,255) 100%)
+	color: $blue
+	transition: all 0.3s
+	border-top: 2px solid #fbfbfb
+	border-left: 2px solid #fdfdfd
+	border-bottom: 2px solid #939293
+	border-right: 2px solid #e9e9e9
+.contact-wrapper__button--grey:hover 
+	background-image: linear-gradient( -27deg, rgb(208,205,205) 0%, rgb(225,224,224) 67%, rgb(242,242,242) 100%)
+	border-top: 2px solid #f4f3f3
+	border-left: 2px solid #f4f4f4
+	border-bottom: 2px solid #909090
+	border-right: 2px solid #d6d3d3
+
+
+
+
+.contact-wrapper__button--grey:hover 
+	color: $blue	
+
+.item-box-col-4
+	width: 33%
+	margin-left: 0
+	padding: 0
+
+.item-box-col-8
+	width: 66% 
+	margin-right: 0
+	padding: 0
+.item-box__line
+	width: 100%
+	padding: 8px 14px
+	font-family: $titili-semi-bold
+	font-weight: $semi-bold
+	border-bottom: 2px solid #f1f2f6
+	font-size: 16px
+	display: flex
+	align-items: center
+.item-box__line:last-child 
+	border-bottom: none
+.item-box__line--header
+	color: $blue 
+	font-size: 18px
+
+.item-box__line-img
+	width: 30px
+	display: flex 
+	align-items: center
+	justify-content: flex-start
+	img 
+		width: 22px
+.item-box__line.sub-item
+	padding-left: 44px
+	color: #7f8389
+	padding-right: 30px
+	justify-content: space-between
+	.item-box__line-img 
+		width: 35px
+.sub-item__wrapper
+	display: flex
+	align-items: center
+.item-box-col-8
+	.item-box__line--header--lg
+		border-bottom: none
+		padding-bottom: 20px
+		justify-content: space-between
+		display: flex
+		align-items: center
+		a
+			font-size: 14px
+			text-decoration: underline
+			font-family: $titili-semi-bold
+			font-weight: 600
+		a:hover 
+			color: $blue
+.item-box-col-8
+	overflow: hidden
+.table-row
+	display: flex
+	justify-content: space-between	
+	border-bottom: 2px solid #f1f2f6
+	padding: 6px 15px
+	position: relative
+	font-size: 14px
+	transition: all 0.3s
+
+
+
+	.table-col:first-child 
+		width: 17%
+	.table-col:nth-child(2)
+		width: 15%
+		flex-direction: column
+		justify-content: center
+		align-items: flex-start
+		line-height: 1.3
+	.table-col:nth-child(3)
+		width: 20%
+		display: flex 
+		align-items: center
+		line-height: 1.1
+		img 
+			margin-right: 2px
+	.table-col:nth-child(4)
+		width: 18%
+	.table-col:nth-child(5)
+		width: 16%
+		font-family: $titili-reg
+		font-weight: 600
+	.table-col:nth-child(6)
+		width: 14%
+
+	.table-col
+		display: flex 
+		align-items: center
+		img 
+			width: 15px
+.table-row:hover 
+	transform: scale(1.01)
+.table-header:hover 
+	transform: scale(1)
+.table-col__img
+	width: 20px 
+.table-row:before 
+	content: ''
+	width: 5px
+	background: #d9dbe1
+	height: 100% 
+	position: absolute 
+	top: 0 
+	left: 0
+.table-header
+	background: #f1f2f6
+	color: #999999	
+	border-bottom: none
+	border-left: none
+	font-size: 15px
+	font-family: $titili-reg
+	font-weight: 400
+	.table-col:nth-child(5)
+		font-family: $sans1
+		font-weight: 400
+.table-header:before 
+	display: none
+.table-row--light-grey:before
+	background: #f1f2f6
+.table-row:last-child 
+	//border-bottom: none
+.item-header-mobil
+	display: none
+.desktop-hide
+	display: none
+.education-videos
+	width: 970px 
+	margin: 0 auto 
+	max-width: 93.750vw
+	margin-top: 10px 
+	margin-bottom: 10px
+	display: flex 
+	justify-content: space-between
+.education-video
+	width: 49.5%
+	display: flex 
+	align-items: center
+	font-size: 28px
+	text-align: center
+	line-height: 1.2
+	color: #fff
+
+	span 
+		font-family: $sans1-semi-bold
+		font-weight: 600
+	svg 
+		width: 64px 
+		height: 64px
+		margin-left: 20px
+		.arrow-cls-1,
+		.arrow2-cls-1
+			opacity: 0.6
+			fill: #fff
+	svg:hover 
+		.arrow-cls-1
+			fill: #999ea4
+			opacity: 1
+		.arrow2-cls-1
+			fill: #b6c4c0
+			opacity: 1
+.education-video:hover 
+	color: #fff
+.education-video--1
+	background: url('../img/video1.png')
+	background-size: cover 
+	padding: 30px 0
+	padding-left: 50px
+	.education-video-text
+		max-width: 309px
+		font-family: $titili-light
+		font-weight: 300
+		span 
+			font-family: $titili-semi-bold
+			font-weight: 600
+.education-video--2
+	background: url('../img/video2.png')
+	background-size: cover 
+	padding: 30px 0
+	padding-left: 50px
+	.education-video-text
+		max-width: 309px
+.education-video--1
+	.cls2-1
+		fill: #83b2db
+		transition: all .3s
+	.cls2-2
+		fill: #e3e7f2
+		transition: all .3s
+	.cls2-3
+		fill: #fff
+		transition: all .3s
+	.cls2-4
+		fill: #1a324c
+		transition: all .3s
+.education-video--1:hover,
+.popup-item svg:hover
+	.cls2-2
+		fill: #fff
+	.cls2-3
+		fill: #eff1f4
+
+.education-video--2
+	.cls-1
+		fill:#87e8d8
+		transition: all .3s
+	.cls-2
+		fill:#e3e7f2
+		transition: all .3s
+	.cls-3
+		fill:#fff
+		transition: all .3s
+	.cls-4
+		fill:#3db2a3
+		transition: all .3s
+.education-video--2:hover
+	.cls-2
+		fill: #fff
+	.cls-3
+		fill: #eff1f4
+.footer 
+	width: 100%
+	background: $blue
+	overflow: hidden
+	height: 37px
+	position: absolute
+	bottom: 0
+	left: 0
+.footer__container
+	max-width: 93.750vw
+	margin: 0 auto
+	padding: 7px 0
+	color: #fff
+	display: flex 
+	justify-content: space-between 
+	align-items: center
+	font-size: 14px
+	font-family: $titili-reg
+	font-weight: 400
+.footer-right	
+	align-items: center
+	position: relative
+	padding-left: 38px
+	display: flex
+	img
+		width: 16px
+		margin-right: 5px
+.mobil-platforms__button a
+	display: flex 
+	align-items: center
+
+//start user page style
+.item-box-col-4--right
+	margin: 0 auto
+	margin-right: 0
+.item-box-col-8--left
+	margin: 0 auto
+	margin-left: 0
+.row-two-col--margin
+	margin-top: 10px 
+	margin-bottom: 10px
+.contact-wrapper-col-4
+	padding: 16px 10px 15px 10px
+	margin-top: 10px
+	.text 
+		font-size: 16px
+	.contact-wrapper__header img
+		width: 30px
+		margin-right: 9px
+.item-box--inside,
+.contact-wrapper--inside
+	width: 100%
+	margin: 0
+.item-box-wrapper
+	background: transparent	
+	box-shadow: none
+.item-box--inside
+	margin-bottom: 10px
+.hizli-logo
+	width: 150px
+	margin: 0 auto
+.advant 
+	display: flex 
+	flex-direction: column 
+	align-items: center
+.title-18-semi-bold
+	font-size: 18px 
+	text-transform: uppercase
+	font-weight: 600 
+	font-family: $titili-semi-bold
+	color: $blue
+.avant__items
+	width: 100%
+	padding-left: 15px
+	padding-bottom: 15px
+	padding-top: 7px
+
+
+.avant__item
+	display: flex 
+	justify-content: flex-start
+	align-items: center
+	font-size: 16px
+	margin-top: 20px
+	font-weight: 400
+	span 
+		font-family: $sans1-bold 
+		font-weight: $bold
+.avant__item-icon
+	width: 50px
+	img 
+		width: 40px	
+.avant__text 
+	line-height: 1.2
+.item-box--last
+	margin-bottom: 10px
+.payment-metods
+	padding: 12px 100px
+	display: flex 
+	justify-content: space-between
+
+	a 
+		display: flex
+		align-items: center
+.text-logo
+	img 
+		width: 22px
+	span 
+		font-family: $sans1-black
+		font-weight: 900
+		color: $blue
+		font-size: 18px
+.text-logo__img
+	width: 27px
+.papara-logo 
+	width: 85px
+.payment-metods__logo
+	display: flex 
+	align-items: center
+.visa-logo
+	width: 58px 
+.mastercard-logo 
+	width: 40px
+.bitcoin-logo
+	width: 97px
+.profile__tabs
+	display: flex
+	border-bottom: 2px solid #f1f2f6
+.profile__tab,
+.profile__tab-link
+	cursor: pointer 
+	width: 50%
+	display: flex 
+	justify-content: center 
+	align-items: center
+	padding-top: 15px 
+	padding-bottom: 15px
+	font-weight: 400
+	font-size: 16px 
+	text-transform: uppercase
+	color: #a1adbb
+.profile__tab-link:hover
+	color: #a1adbb
+.profile__tab--three
+	width: 33.3%
+.profile__tab.active,
+.profile__tab-link.active
+	font-weight: 600
+	background: #f5f5f5
+	color: $blue
+.profile__tab-item
+	display: none 
+.profile__tab-item:first-child
+	display: block	
+.profile__tab,
+.profile__tab-link
+	position: relative
+	background: transparent
+.profile__tab:first-child:before,
+.profile__tab-link:first-child:before
+	content: ''
+	position: absolute
+	right: 0
+	top: 50%
+	transform: translateX(50%) translateY(-50%)
+	background: #d9dbe1
+	height: 70.5% 
+	width: 4px
+	border-radius: 5px
+	z-index: 1
+.profile__tab--three:nth-child(2):before
+	content: ''
+	position: absolute
+	right: 0
+	top: 50%
+	transform: translateX(50%) translateY(-50%)
+	background: #d9dbe1
+	height: 70.5% 
+	width: 4px
+	border-radius: 5px
+	z-index: 1
+
+.profile__tab-item
+	padding: 20px 20px 20px 20px
+.form-title
+	color: #7f8389
+	font-size: 15px
+	margin-bottom: 5px
+
+.form-row
+	display: flex 
+	justify-content: space-between
+	margin-top: 20px
+input,
+select 
+	width: 100%
+	height: 40px
+	border-radius: 2px
+	border-width: 1px
+	border-color: rgb(173, 176, 193)
+	border-style: solid
+	padding: 0px 13px
+	color: #1a324c
+	outline: none
+select
+	cursor: pointer
+	-webkit-appearance: none
+	-moz-appearance: none
+	appearance: none
+	background: url('../img/arrow-down.svg')
+	background-repeat: no-repeat
+	background-size: 16px
+	background-position: right 14px center
+	color: #3a4149
+.ui-datepicker-trigger
+	position: absolute
+	right: 14px
+	top: 50%
+	width: 16px
+	transform: translateY(-50%)
+	cursor: pointer
+.date-wrapper
+	position: relative
+input::placeholder 
+	color: #7f8389
+input:focus::placeholder 
+	color: transparent
+input:focus
+	border: 1px solid $aqua-dark
+.input-complite
+	background: #eeeeee
+	border: none
+
+.input-wrapper
+	width: 49%
+.form-row--single
+	.input-wrapper 
+		width: 100%
+.input-label 
+	display: block
+	margin-bottom: 2px
+	font-size: 16px
+.form-row--center
+	justify-content: center
+	display: flex
+	width: 100%
+.form-button 
+	background: $aqua
+	color: #fff 
+	border: none
+	font-size: 18px
+	font-family: $titili-reg
+	font-weight: 400
+	padding: 6px 50px
+	box-shadow: 0px 3px 6px 0px rgba(0, 0, 0, 0.2)
+	cursor: pointer
+	width: 235px 
+	height: 39px
+	border-top: 2px solid $green-border-top
+	border-right: 2px solid $green-border-right
+	border-bottom: 2px solid $green-border-bottom
+	border-left: 2px solid $green-border-left
+.form-button:hover 
+	border-top: 2px solid $green-border-top-hover
+	border-right: 2px solid $green-border-right-hover
+	border-bottom: 2px solid $green-border-bottom-hover
+	border-left: 2px solid $green-border-left-hover
+.form-button--user
+	padding: 3px 3px
+	display: flex 
+	align-items: center 
+	justify-content: center
+	width: 235px
+	height: 39px
+	transition: all .5s
+.form-button--user:hover,
+.form-button:hover
+	background: $aqua-dark
+.form-button
+	transition: all 0.5s
+.title-semi-bold
+	font-size: 16px 
+	font-weight: 600
+	margin-bottom: 11px
+	color: $blue
+.select--grey
+	background-color: #fafafa
+.row-two-col .item-box.item-box--top.item-box--grey
+	width: 100%
+	background: #fafafa
+	box-shadow: 0.559px 0.829px 4px 0px rgba(0, 0, 0, 0.25)
+	.item-box__row
+		justify-content: flex-start
+	.item-box__col:first-child
+		max-width: 100%
+		width: 250px
+		min-width: 250px
+		padding-left: 10px
+	.item-box__col:nth-child(2)
+		max-width: 140px
+	.item-box__col:nth-child(3)
+		padding-left: 34px
+		width: 100%
+		max-width: 100%
+		display: flex
+		justify-content: flex-start
+.payment-metods__tabs-wrapper
+	margin-top: 40px
+.payment-metods__tabs
+	display: flex
+	flex-wrap: wrap
+	justify-content: space-between
+	.payment-metods__tab.transparent 
+		box-shadow: none 
+		background: transparent
+.payment-metods__tab
+	width: calc(33.3% - 7px)
+	margin-bottom: 7px	
+	background: rgb(250, 250, 250)
+	box-shadow: 0.559px 0.829px 4px 0px rgba(0, 0, 0, 0.25)
+	display: flex 
+	justify-content: center 
+	align-items: center
+	min-height: 90px
+	border-radius: 4px
+	transition: all 0.3s
+	img 
+		max-width: 47px
+	.img-wrapper 
+		width: 55px
+.payment-metods__tab:hover 
+	background: #fff
+	box-shadow: 0.559px 0.829px 8px 0px rgba(0, 0, 0, 0.4)
+
+.payment-metods__tab--papara
+	.img-wrapper 
+		width: auto
+	img 
+		max-width: 87px
+		margin: 0 auto
+		display: block
+.payment-metods__tab-text
+	font-size: 21px
+	color: #1a324c
+	line-height: 1
+	font-weight: 700
+.back-wrapper
+	font-size: 16px
+	
+	display: flex 
+	align-items: center
+	margin-bottom: 9px
+	a 
+		color: #a1adbb
+	svg 
+		width: 30px
+		margin-right: 9px
+		.cls1 
+			fill: #aec2d3
+.back-wrapper a:hover
+	color: $blue
+	svg
+		.cls-1 
+			fill: #83b2db
+		.cls-4 
+			fill: $blue	
+.payment-metods__tab--papar
+	flex-direction: column
+	justify-content: center
+	align-items: center
+	div 
+		display: block
+		margin: 0 auto
+	.papare-logo
+		max-width: 85px
+		margin-left: 37px
+		margin-top: 2px
+.papara-page-text
+	position: relative 
+	display: inline-block
+	img 
+		position: absolute
+		width: 27px
+.top-arrow
+	right: 2px
+	top: 0
+	//transform: translateX(100%)
+.bottom-arrow
+	left: 7px
+	top: 85%
+.payment-metods__tab
+	position: relative
+.para-cek__item-text
+	
+	//white-space: nowrap
+	font-size: 10px 
+	color: #85919e
+.payment-metods__tab--para-cek
+	min-height: 100px
+	flex-direction: column
+	justify-content: space-between
+	padding-bottom: 10px
+
+
+.para-cek-item-wrapper
+	display: flex
+	align-items: center
+	min-height: 75px
+.success-wrapper
+	display: flex 
+	align-items: center 
+	flex-direction: column 
+	text-align: center
+	img 
+		width: 92px
+		margin-bottom: 10px
+.succes-title
+	font-size: 16px 
+	font-weight: 600 
+	color: $blue
+.succes-text
+	font-size: 16px
+	
+.form-button--succ
+	padding-left: 20px 
+	padding-right: 20px
+	margin-top: 20px
+	font-family: $titili-reg
+	font-size: 18px 
+	font-weight: 400
+	transition: all .5s
+	display: flex 
+	align-items: center
+	justify-content: center
+	outline: none
+.form-button--succ:focus 
+	outline: none
+.form-button--succ:hover 
+	background: $aqua-dark
+.item-box--right
+	width: 100%
+	padding-bottom: 0
+	margin-bottom: 0
+	.text-logo__img
+		width: 37px
+	.text-logo span
+		font-size: 24px
+	.text-logo img
+		width: 30px
+	.papara-logo
+		width: 111px
+	.visa-logo
+		width: 78px
+	.mastercard-logo
+		width: 53px
+	.bitcoin-logo
+		width: 130px
+
+	
+	.payment-metods
+		flex-direction: column
+		align-items: center
+		a 
+			margin-bottom: 30px
+			justify-content: center
+.visa-masrercard
+	display: flex
+	width: 166px 
+	justify-content: space-between
+.profile__tab-item--not-padding
+	padding-left: 0
+	padding-right: 0
+.title-semi-bold--padding-left
+	padding-left: 16px
+.page-pagination
+	display: flex 
+	justify-content: center
+	align-items: center
+	padding-top: 20px
+	a
+		font-size: 18px
+		color: $blue-text
+		margin: 0 7.5px
+	a:hover 
+		color: $blue-text
+	a.active 
+		color: #38b2a3
+		text-decoration: underline
+		font-weight: 700
+		
+	span 
+		margin: 0 7.5px
+.ib-content
+	padding-top: 20px
+.ib-content-text
+	font-size: 15px 
+	color: #7f8389
+.ib-header
+	padding-left: 16px 
+	padding-right: 16px
+//start ib__boxes style
+.ib__boxes
+	padding-left: 16px 
+	padding-right: 16px
+	margin-bottom: 18px
+	display: flex 
+	justify-content: space-between
+.ib__box
+	background-color: rgb(250, 250, 250)
+	box-shadow: 0.559px 0.829px 4px 0px rgba(0, 0, 0, 0.25)
+	width: 49%
+	border-radius: 2px
+	padding: 15px 0 
+	display: flex 
+	flex-direction: column 
+	align-items: center
+	color: #3a4149
+	text-align: center
+.ib__box-text
+	font-family: $titili-reg
+	font-weight: 400
+	font-size: 13px
+.ib__box-value
+	font-size: 18px 
+	font-weight: 600
+.input-wrapper
+	margin-right: 10px
+.input-wrapper--btn
+	display: flex 
+	flex-direction: column 
+	justify-content: space-between
+	min-width: 102px
+	width: 102px
+	margin-right: 0
+	
+.ib__btn 
+	height: 40px
+	cursor: pointer
+	border: none
+	background-color: $blue
+	box-shadow: 0px 3px 6px 0px rgba(0, 0, 0, 0.2)
+	color: #fff
+	font-size: 14px 
+	font-family: $titili-semi-bold
+	font-weight: 600
+	text-transform: uppercase
+	border-top: 2px solid $blue-border-top
+	border-right: 2px solid $blue-border-right
+	border-bottom: 2px solid $blue-border-bottom 
+	border-left: 2px solid $blue-border-left
+	transition: all .5s
+.ib__btn:hover 
+	background: #05303d
+	border-top: 2px solid $blue-border-top-hover
+	border-right: 2px solid $blue-border-right-hover
+	border-bottom: 2px solid $blue-border-bottom-hover 
+	border-left: 2px solid $blue-border-left-hover
+
+
+
+//end ib__boxes style
+
+.ib-header__footer
+	display: flex 
+	justify-content: space-between
+	align-items: flex-end
+	padding-top: 29px
+	padding-bottom: 10px
+	.title-semi-bold
+		margin-bottom: 0
+.ib-header__sum
+	display: flex
+	align-items: flex-end
+.id-header__sum-title
+	text-transform: uppercase
+.id-header__sum-value
+	font-size: 24px 
+	font-weight: 700 
+	font-family: $sans1-bold
+	line-height: 1.2 
+	color: $aqua
+	margin-left: 10px
+.table-row--ib.table-row .table-col:nth-child(3).table-col--isim
+	min-width: 125px
+	width: 125px
+	line-height: 1
+.table-row--ib.table-row .table-col:first-child.table-col--num
+	min-width: 40px
+	width: 40px
+.table-row--ib.table-row .table-col:nth-child(2).table-col--first
+	min-width: 115px
+	width: 115px
+.table-row--ib.table-row .table-col:nth-child(4).table-col-varlik
+	min-width: 80px
+	max-width: 80px
+.table-row.table-row--ib
+	padding-top: 0 
+	padding-bottom: 0
+	padding-right: 10px
+	.table-col
+		padding-top: 7px 
+		padding-bottom: 7px
+.table-row--ib.table-row .table-col:nth-child(5).table-col--bakiye
+	min-width: 83px
+	width: 83px
+	font-weight: 400
+	font-family: $titili-reg
+.table-row--ib.table-row .table-col--hakindes
+	min-width: 90px
+	width: 90px
+.table-row--ib.table-row
+	.table-col__btn
+		width: 90px
+.table-col--last
+	width: 100px
+	max-width: 100px
+.table-header--ib,
+.table-row--ib
+	padding-left: 0
+	padding-right: 0
+.table-header--ib
+	.table-col
+		padding-top: 10px 
+		padding-bottom: 8px
+	.table-col--num
+		border-right: none
+.table-col--num
+	text-align: center
+	display: flex 
+	justify-content: center
+	font-family: $sans1 
+	border-right: 5px solid #d9dbe1
+	padding-left: 5px
+	margin-right: 9px
+.table-row--ib.table-row--light-grey
+	.table-col--num
+		border-right: 5px solid #f1f2f6
+.item-box--right--padding
+	padding-top: 67px
+	padding-bottom: 67px
+	.payment-metods a
+		margin-bottom: 42px
+.table-col__btn
+	background-color: $aqua
+	box-shadow: 0px 3px 6px 0px rgba(0, 0, 0, 0.2)
+	height: 30px
+	width: 100px
+	display: flex 
+	justify-content: center 
+	align-items: center
+	color: #fff
+	font-family: $sans3-semi-bold
+	font-weight: 600
+	border-top: 2px solid $green-border-top
+	border-right: 2px solid  $green-border-right 
+	border-bottom: 2px solid $green-border-bottom 
+	border-left: 2px solid $green-border-left
+.table-col__btn:hover 
+	color: #fff
+	background: #008d63
+	border-top: 2px solid $green-border-top-hover
+	border-right: 2px solid  $green-border-right-hover 
+	border-bottom: 2px solid $green-border-bottom-hover 
+	border-left: 2px solid $green-border-left-hover
+.row-two-col .item-box.item-box--top.item-box--grey .item-box__row--ib-wrap
+	display: flex 
+	justify-content: space-between
+.row-two-col .item-box.item-box--top.item-box--grey .item-box__row--ib-wrap .item-box__col--money	
+	//min-width: 50% 
+	//width: 50%
+.item-box__row--ib-wrap .item-box__col-wrapper
+	display: flex
+	align-items: flex-end
+	
+.item-box__col-wrapper--id
+	justify-content: flex-end
+		
+	//min-width: 50%
+.row-two-col .item-box.item-box--top.item-box--grey .item-box__row--ib-wrap .item-box__col--money:after 
+	display: none
+.row-two-col .item-box.item-box--top.item-box--grey .item-box__row--ib-wrap .item-box__col:nth-child(2)
+	//min-width: 200px
+	//max-width: 50%
+.item-box__row--ib-wrap .item-box__col-wrapper
+	min-width: 270px
+.item-box__col--money-value-id
+	margin-left: 10px
+.col-title--meta
+	margin-top: 5px
+.item-box__col-wrapper--id1
+	align-items: center !important
+	display: flex
+.item-box--grey--ib
+	margin-bottom: 15px
+.ib-details-table 
+
+	.table-row
+		padding-left: 0 
+		padding-right: 0
+		padding-top: 0 
+		padding-bottom: 0
+	.table-col--namber
+		border-right: 5px solid #d9dbe1
+		margin-right: 0
+		padding-left: 5px
+		margin-right: 15px
+	.table-row--light-grey .table-col--namber
+
+		border-color: #f1f2f6
+	.table-row .table-col
+		padding-top: 5px 
+		padding-bottom: 5px
+	.table-row.table-header .table-col--namber
+		border-right: none
+	.table-row .table-col:first-child
+		width: 40px
+		display: flex 
+		align-items: center 
+		justify-content: center
+	.table-row .table-col:nth-child(2)
+		width: 135px
+	.table-row .table-col:nth-child(3)
+		width: 92px
+	.table-row .table-col:nth-child(4)
+		width: 125px
+		display: block
+	.table-row .table-col:nth-child(5)
+		width: 146px
+		display: block
+	.table-row .table-col:nth-child(6)
+		width: 94px
+
+.hesap-ac-text
+	text-align: center
+	font-size: 16px
+	max-width: 85%
+	margin: 0 auto
+	margin-bottom: 20px
+.title-semi-bold--center
+	text-align: center
+.hesap-ac__items
+	display: flex 
+	justify-content: center
+	padding-bottom: 17px
+.hesap-ac__item
+	color: #7f8389
+	font-size: 16px
+	display: flex 
+	justify-content: center 
+	align-items: center
+	background-color: rgb(250, 250, 250)
+	box-shadow: 0px 2px 6px 0px rgba(0, 0, 0, 0.2)
+	width: 85px
+	height: 40px
+	margin: 5px
+	cursor: pointer
+.hesap-ac__button-wrapper
+	display: flex 
+	justify-content: center
+.hesap-ac__button,
+.hesap-ac__button2
+	border: none
+	background: $aqua
+	color: #fff
+	font-size: 18px
+	font-weight: 600
+	box-shadow: 0px 3px 6px 0px rgba(0, 0, 0, 0.2)
+	width: 235px
+	height: 39px
+	cursor: pointer
+	outline: none
+	font-family: $titili-semi-bold
+	transition: all .5s
+	font-weight: 600
+	border-top: 2px solid $green-border-top
+	border-right: 2px solid $green-border-right
+	border-bottom: 2px solid $green-border-bottom
+	border-left: 2px solid $green-border-left
+.hesap-ac__button:focus,
+.hesap-ac__button2:focus
+	outline: none
+.hesap-ac__button:hover,
+.hesap-ac__button2:hover 
+	background: #06855D
+	border-top: 2px solid $green-border-top-hover
+	border-right: 2px solid $green-border-right-hover
+	border-bottom: 2px solid $green-border-bottom-hover
+	border-left: 2px solid $green-border-left-hover
+.hesap-ac__button.disabled,
+.hesap-ac__button2.disabled
+	background-color: rgb(215, 218, 233)
+	box-shadow: none
+	border: none
+.hesap-ac__item.active
+	background: $blue
+	color: #fff
+.hesap-ac__button-wrapper
+	margin-bottom: 30px
+.hesap-ac__item-buttons
+	padding-top: 10px
+	display: flex 
+	justify-content: center
+.hesap-ac__item-button
+	width: 100px
+	height: 31px
+	font-family: $titili-semi-bold
+	font-weight: 600
+	margin: 0 2.5px
+	cursor: pointer
+	outline: none
+	transition: all 0.3s
+.hesap-ac__item-button:focus 
+	outline: none
+.hesap-ac__item-button--aqua
+	background-color: $aqua
+	box-shadow: 0px 3px 6px 0px rgba(0, 0, 0, 0.2)
+	color: #fff
+	border-top: 2px solid #00ffb3
+	border-left: 2px solid #00c48a
+	border-bottom: 2px solid #008a61
+	border-right: 2px solid #00b67f
+.hesap-ac__item-button--aqua:hover
+	background: #06855f
+	border-top: 2px solid #00d494
+	border-left: 2px solid #05996c
+	border-bottom: 2px solid #027d58
+	border-right: 2px solid #068a62
+.hesap-ac__item-button--grey
+	background-color: rgb(250, 250, 250)
+	box-shadow: 0px 3px 6px 0px rgba(0, 0, 0, 0.2)
+	border-width: 1px
+	border-color: $blue
+	border-style: solid
+
+
+
+
+.hesap-ac__item-button--grey:hover 
+	color: #fff
+	background: $blue
+	border-top: 2px solid #0983a9
+	border-left: 2px solid #075871
+	border-bottom: 2px solid #022e3b
+	border-right: 2px solid #064e64
+.text-box__title--not-padding
+	padding-top: 0 
+	padding-bottom: 5px
+.success-wrapper.margin-bottom
+	margin-bottom: 20px
+.item-box__header
+	.title-semi-bold
+		margin-bottom: 0
+.item-box.item-box--top.item-box--grey.item-gercec
+	margin-top: 0
+	border-top-left-radius: 0
+	border-top-right-radius: 0
+.item-box.item-box--top.item-box--grey.item-box-no-bottom-border
+	border-bottom-left-radius: 0
+	border-bottom-right-radius: 0
+.item-gercec-col,
+.item-gercec-col2
+	width: 33.3%
+	display: flex 
+	justify-content: center 
+	align-items: center
+	text-align: center
+.item-gercec-col-wrapper-btn
+	color: #fff
+	text-align: center
+	font-family: 600
+	border-color: $blue
+	background-color: $blue
+	box-shadow: 0px 3px 6px 0px rgba(0, 0, 0, 0.2)
+	height: 47px
+	width: 108px
+	margin-top: 1px
+	line-height: 1
+	display: flex 
+	align-items: center
+	justify-content: center
+	margin: 0 auto
+	border-top: 2px solid $blue-border-top
+	border-right: 2px solid $blue-border-right
+	border-bottom: 2px solid $blue-border-bottom
+	border-left: 2px solid $blue-border-left
+.item-gercec-col-wrapper div 
+	font-family: $titili-reg
+.item-gercec__val
+	font-weight: 600
+.item-gercec-col,
+.item-gercec-col2
+	position: relative
+.item-gercec-col:after,
+.item-gercec-col2:after	
+	content: ''
+	background-color: rgb(217, 219, 225)
+	height: 46px
+	width: 4px
+	position: absolute
+	right: 0
+	border-radius: 10px
+.item-gercec-col:last-child,
+.item-gercec-col2:after
+	text-align: left
+.item-gercec-col:last-child:after,
+.item-gercec-col2:after
+	display: none
+.item-gercec-mobil-link
+	display: none
+.grey-wrap
+	background: rgb(250, 250, 250)
+	box-shadow: 0.559px 0.829px 4px 0px rgba(0, 0, 0, 0.25)
+	padding-bottom: 10px
+.gercile-header
+	display: flex 
+	justify-content: space-between
+	align-items: center
+	margin-top: 20px
+.gercile-header-right
+	color: $blue 
+	text-decoration: underline
+.gercile-header-right:hover
+	color: $blue 
+	text-decoration: underline
+.item-gercec-col-wrapper-btn.active 
+	background: transparent
+	color: $blue
+	box-shadow: 0px 3px 6px 0px rgba(0, 0, 0, 0.2)
+	border-color: rgb(26, 50, 76)
+	border-style: solid
+	border-width: 1px
+
+.gercek-b
+	display: none 
+.gercek-b.active 
+	display: block
+.gercek-a
+	display: none
+.gercek-a.active
+	display: block
+.item-gercec-col-wrapper-btn
+	cursor: pointer
+.tab-gercile
+	display: flex
+	width: 66%
+	.item-gercec-col,
+	.item-gercec-col2
+		width: 100%
+
+.item-gercec-col.active,
+.item-gercec-col2.active	
+	.item-gercec-col-wrapper-btn
+		background: transparent
+		color: $blue
+		box-shadow: 0px 3px 6px 0px rgba(0, 0, 0, 0.2)
+		border-color: $blue
+		border-style: solid
+		border-width: 1px
+
+.item-gercec-col.active .item-gercec-col-wrapper-btn.item-gercec-col-wrapper-btn--start,
+.item-gercec-col2.active .item-gercec-col-wrapper-btn.item-gercec-col-wrapper-btn--start2
+	background: $blue 
+	color: #fff
+.row-two-col .item-box.item-box--top.item-box--grey .item-box__row
+	justify-content: center
+.demo-link
+	text-transform: uppercase 
+	text-decoration: underline
+	color: $blue
+.demo-link:hover 
+	color: $blue 
+	text-decoration: underline
+.popup 
+	position: fixed
+	top: 0 
+	left: 0 
+	width: 100% 
+	height: 100vh 
+	overflow-y: auto
+	background: rgba(0, 0, 0, .8)
+	display: flex
+	justify-content: center
+	align-items: flex-start
+	display: none
+	padding-top: 11.250vw
+	z-index: 99999
+.popup.active	
+	display: flex 
+	
+	
+.popup__content
+	width: 480px
+	background: #fff
+	border-radius: 5px
+	margin-bottom: 50px
+.popup__content__header
+	text-align: center
+	background: url('../img/popup-header.png')
+	height: 110px
+	display: flex 
+	justify-content: center
+	flex-direction: column 
+	align-items: center
+	color: #fff
+	font-size: 28px
+	line-height: 1.166
+	font-family: $titili-reg
+	font-weight: 400
+.popup__content__header-bold-text
+	font-family: $titili-semi-bold
+	font-weight: 700
+
+
+.popup-item__text 
+	font-size: 16px
+	transition: all 0.2s
+.popup-item
+	padding: 7px 20px 7px 20px
+	border-top: 2px solid #f1f2f6
+	cursor: pointer
+	display: flex 
+	justify-content: space-between 
+	align-items: center
+	border-left: 5px solid rgb(241, 242, 246)
+	color: $blue
+	svg 
+		width: 30px 
+		height: 30px
+		.pcls-1 
+			opacity: 0.6
+			transition: all .2s
+		
+.popup-item:hover 
+	color: $blue	
+	font-weight: 600
+	svg 
+		.pcls-1
+			opacity: 1
+.popup-item--dark
+	border-left: 5px solid rgb(217, 219, 225)
+.education-video
+	cursor: pointer
+.form-button--succ2
+	width: 238px
+	height: 39px
+.col-title.col-title:hover 
+	font-weight: 600
+.item-box__col--money-img,
+.item-box__col--money-value,
+.col-text
+	transition: all 0.3s
+.item-box__col--money-img:hover
+	transform: scale(1.1)
+
+.item-box__col--money-value:hover,
+
+	transform: scale(1.03)
+.text.col-text:hover
+	color: #000
+.open-account
+	width: 535px 
+	margin: 0 auto 
+.open-account-tab
+	padding-top: 25px
+	padding-left: 0 
+	padding-right: 0
+	padding-bottom: 0
+.open-account__text
+	text-align: center
+	font-size: 15px
+	color: #7f8389
+	margin-bottom: 8px
+.open-account__first-col
+	width: 127px
+	display: flex 
+	align-items: center
+.open-account__third-col
+	width: 129px
+	padding-left: 9px
+	display: flex 
+	align-items: center
+.open-account--login
+	//width: 581px
+	.open-account__first-col
+		width: 140px
+		letter-spacing: -1px
+		line-height: 1.2
+	.open-account__third-col
+		width: 140px
+	.open-account__second-col
+
+	
+.open-account__form-row
+	display: flex
+.open-account__input-col
+	width: 280px
+.open-account__form-row
+	padding-top: 15px
+	align-items: center
+.open-account__icon
+	width: 32px
+	img 
+		max-width: 25px
+.open-account__label
+	font-size: 16px
+.input-error
+	color: #dd0404
+	font-family: 'Titillium Web', sans-serif
+	font-size: 14px
+	display: none
+	line-height: 1.2
+.open-account__form-row.error
+	.input-error
+		display: block
+	input 
+		border: 1px solid #dd0404
+.form-button--oppen-account
+	width: 100%
+.open-account__link
+	color: #1a324c
+	font-size: 16px
+	text-align: center 
+	font-weight: 600
+	font-family: $sans3-semi-bold
+	display: block
+.open-account__link:hover
+	color: #1a324c
+.open-account__form-row--footer
+	padding-bottom: 28px
+	.open-account__text
+		margin-bottom: 0
+.advant-account
+	padding-top: 70px
+	padding-bottom: 70px
+.item-box--inside-account
+	margin-bottom: 0
+.advant-login
+	padding-top: 24px 
+	padding-bottom: 24px
+.login-page-header
+	height: 53px
+	display: flex 
+	justify-content: center 
+	align-items: center
+	font-size: 16px 
+	font-family: $sans1-semi-bold
+	font-weight: 600
+.pen-account__form-row--password
+	padding-top: 10px
+	line-height: 1
+	.open-account__input-col
+		display: flex 
+		justify-content: flex-end
+		a
+			color: $blue
+			text-decoration: underline
+
+.card
+	position: relative
+	perspective: 1000px
+	cursor: pointer
+	min-height: 152px
+	overflow-x: hidden		
+.front
+  position: absolute
+  top: 0  
+  left: 0
+
+  width: 100%
+  transition: 1s
+  backface-visibility: hidden
+.back 
+  position: absolute
+  transform: rotateX(180deg)
+  top: 0 
+  left: 0
+
+  width: 100%
+  transition: 1s
+  backface-visibility: hidden
+  //padding: 10px 20px
+.card.active .front
+  transform: rotateX(180deg)
+.card.active .back
+  transform: rotateX(360deg)
+.item-box-not-top-padding
+	margin-top: 0
+.item-box__row-first
+  padding-bottom: 10px
+.item-box--top .item-box__col--bakiye
+	max-width: 90px
+.item-box__col--detail--front
+	max-width: 90px
+	min-width: 90px
+	.details-link-btn:hover 
+		color: #042732
+
+.item-box__col--buttons 
+	min-width: 250px
+.guncule-col-mobile
+	display: none
+.payment-metods__tab.payment-metods__tab--papar .logo-papar
+	max-width: 95%
+	width: 95%
+.back-wrapper--ib
+	display: flex 
+	justify-content: space-between
+.ib-header .ib-details__btn
+	width: 238px 
+	height: 40px
+	display: flex 
+	align-items: center 
+	justify-content: center
+	background-color: $aqua
+	border-radius: 3px
+	box-shadow: 0px 3px 6px 0px rgba(0, 0, 0, 0.2)
+	color: #fff
+	font-size: 18px
+.ib-header .ib-details__btn:hover
+	background-color: rgb(49, 146, 134)
+	box-shadow: 0px 3px 6px 0px rgba(0, 0, 0, 0.2)
+	color: #fff
+.back-wrapper
+	padding-bottom: 3px
+.item-box__row-ib-det
+	.col-title--meta
+		margin-top: 0
+		line-height: 1.1
+	.item-box__col--money-value
+		margin-bottom: 5px
+		font-size: 24px
+		white-space: nowrap
+	.item-box__col--money
+		margin-right: 19px
+
+.item-box.item-box--grey--ib.item-box--det
+	.col-title
+		line-height: 1
+
+	.item-box__row.item-box__row-ib-det.item-box__row--ib-wrap
+		justify-content: flex-start
+
+		.item-box__col--money
+			min-width: 241px 
+			width: 241px
+			margin-left: 10px
+			margin-right: 5px
+			.item-box__col-wrapper--id1
+				min-width: auto
+		.col-title--mail.col-title--meta
+			text-transform: none
+			margin-bottom: 3px
+	.item-box__col:first-child:before 
+		display: none
+	.item-box__col
+		position: relative
+	.item-box__col:after
+		content: ''
+		position: absolute
+		height: 45px
+		width: 4px
+		top: 50%
+		transform: translateY(-50%)
+		left: 0
+		border-radius: 4px
+		display: block
+		background: #d9dbe1
+	.item-box__col--bakiye
+		display: flex 
+		justify-content: center
+		width: 102px
+		min-width: 102px
+		.item-box__col-wrapper
+			flex-direction: column
+			min-width: auto
+			align-items: flex-start
+	.item-box__col:nth-child(3).item-box__col--varlik
+		padding-left: 0
+		width: 98px
+		min-width: 98px
+		display: flex 
+		justify-content: center
+.item-box__col.item-box__col--geri
+	max-width: 120px
+	padding-left: 20px
+	min-width: 120px
+	//margin-right: 20px
+
+	.item-box__col-wrapper--id
+		flex-direction: column
+		display: flex
+		align-items: flex-start
+		min-width: auto 
+		max-width: auto
+		.item-box__col--money-value-id
+			margin-left: 0
+.item-box-ib--detail
+	padding-top: 92px 
+	padding-bottom: 15px
+	.payment-metods a 
+		margin-bottom: 80px
+.table-herkile-ib
+	.table-col:first-child 
+		width: 0 
+		min-width: 0 
+		max-width: 0
+	.table-row
+		justify-content: flex-start
+	.table-row .table-col:nth-child(2)
+		width: 18%
+		margin-left: 1%
+	.table-row .table-col:nth-child(3)
+		width: 27%
+	.table-row .table-col:nth-child(4)
+		width: 22%
+	.table-row .table-col:nth-child(5)
+		width: 22%
+	.table-row .table-col:nth-child(6)
+		width: 15%
+.table-col--red
+	color: #d30000
+.table-col--grey
+	color: #999999
+.table-col--green
+	color: #3db2a3
+.item-box.item-box-ib-herek
+	padding-top: 35px 
+	padding-bottom: 0px
+	a 
+		margin-bottom: 51px
+.ib-header__footer--herk
+	padding-top: 5px
+.gercek-a.tab-content-gercec
+	.table-row .table-col:first-child
+		width: 15%
+		flex-direction: column
+		align-items: flex-start
+		justify-content: center
+	.table-row .table-col:nth-child(2)
+		flex-direction: row
+		width: 20%
+		line-height: 1.1 
+		align-items: center
+		justify-content: flex-start
+		img 
+			margin-right: 2px
+
+.form-button--succ--blue
+	width: 200px
+	background-color: rgb(26, 50, 76)
+	box-shadow: 0px 3px 6px 0px rgba(0, 0, 0, 0.2)
+.form-button--succ--blue:hover 
+	background-color: rgb(17, 32, 49)
+.item-header-desktop
+	font-family: $titili-semi-bold 
+	font-weight: 600
+.contact-wrapper--inside .contact-wrapper__button
+	padding: 10px 7px
+.item-box.item-box--grey--ib.item-box--det .text.col-title.col-title--meta
+	font-family: $poppins
+	font-weight: 400
+.table-hg
+	.table-row .table-col:nth-child(3)
+		width: 30%
+		flex-direction: column
+		align-items: flex-start
+		justify-content: center
+	.table-row .table-col:nth-child(4)
+		width: 22%
+		font-weight: 600
+	.table-row.table-header .table-col:nth-child(4)
+		font-weight: 400
+.open-account__form-row.error
+	input::placeholder 
+		color: #dd0404
+.open-account__label 
+	font-family: $titili-reg 
+	font-weight: 400
+.open-account__link 
+	font-family: $poppins 
+	font-weight: 700
+.profile__tabs-wrappe--forgotten
+	text-align: center
+	.form-row 
+		justify-content: center
+	.profile__tab
+		background: transparent
+		width: 100%
+	.profile__tab:before 
+		display: none
+@import "media"
+
+
+
+

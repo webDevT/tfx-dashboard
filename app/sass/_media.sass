@@ -1,0 +1,1323 @@
+@import "vars"
+
+/*==========  Desktop First  ==========*/
+
+/* Large Devices, Wide Screens */
+@media only screen and (max-width : 1200px)
+	/**/
+
+
+
+/* Medium Devices, Desktops */
+@media only screen and (max-width : 992px)
+	/**/
+	.top-header		
+		min-height: 5.469vw
+	.header 
+		font-size: 1.733vw
+	.wrapper 
+		max-width: 100%
+		width: 100%
+	.header__user
+		img 
+			width: 3.125vw
+			margin-right: 0
+	.header__user-wrap
+		padding: 1.094vw
+		padding-left: 4.688vw
+		padding-right: 4.688vw
+		display: flex 
+		justify-content: center
+	.header__user-name
+		display: none
+	.header__menu ul li
+		padding: 0 2.500vw
+		margin: 0
+		position: relative
+		display: flex 
+		align-items: center 
+		justify-content: center
+
+	.header__menu ul li:before 
+		content: ''
+		position: absolute
+		width: 0.469vw
+		height: 3.594vw
+		background: #d9dbe1
+		left: 0
+	.header__menu ul li:first-child 
+		margin-left: 2.876vw
+	.menu-link span
+		display: none
+	.header__menu ul li:first-child:before 
+		display: none
+	.header__menu ul li:last-child 
+		padding-left: 2.187vw
+	.menu-link:hover:after 
+		width: 4.5vw
+	.menu-link:after
+		height: 0.155vw
+		bottom: -0.3125vw
+	
+	.item-box__row
+		flex-wrap: wrap
+		justify-content: flex-start
+	.item-box 
+		padding: 2.188vw
+		padding-bottom: 1.87vw
+		max-width: 93.750vw
+	.item-box--top
+		.item-box__col
+			width: auto
+			margin-bottom: 2.500vw
+			.text,
+			.item-box__col--money .col-title
+				//line-height: 2.5vw
+			
+
+		.item-box__col--detail
+			width: 100%
+		.item-box__col:first-child  
+			padding-right: 4.063vw
+			.col-title 
+				line-height: 1.2
+		.item-box__col:nth-child(2),
+		.item-box__col:nth-child(3),
+		.item-box__col:nth-child(4)
+
+			padding: 0 1.8vw
+		.item-box__col:nth-child(4)
+			padding-right: 0
+		.item-box__col:nth-child(4):after
+			display: none
+		// 	width: 13.750vw
+		// .item-box__col:nth-child(3)
+		// 	width: 23.438vw
+		// .item-box__col:nth-child(4)
+		// 	width: 19.688vw
+	.item-box__header
+		margin-bottom: 3.125vw
+
+	.col-title,
+	.col-title.col-title--aqua
+		line-height: 0.6
+
+	.item-box__col:after
+		width: 0.938vw
+	.col-link 
+		br 
+			display: none
+	.text,
+	.item-box__col--money .col-title 
+		font-size: 2.4vw
+	.item-box__col--money-img
+		width: 9.063vw
+		height: 9.063vw
+		margin-right: 1.250vw
+	.item-box__col--money-value
+		font-size: 4.800vw
+	.col-title.col-title--aqua
+		font-size: 2.800vw
+	.item-box__col--money
+		padding-right: 0
+	.text-box__title
+		padding-top: 0 
+		padding-left: 0
+		padding-bottom: 0
+	.open-new svg
+		width: 5.938vw
+		height: 5.938vw
+		margin-left: 1.250vw
+	.item-box__header
+		align-items: center
+	.col-title,
+	.col-title.col-title--aqua
+		font-size: 1.866vw
+	.item-box__col--detail .col-title
+		font-size: 2.800vw
+		color: $blue
+	.mobile-buttons
+		display: flex 
+		width: 100%
+		margin-bottom: 2.188vw
+		justify-content: space-between 
+		align-items: center
+		.button 
+			width: 49%
+			height: 10.625vw
+	.button 
+		font-size: 4.266vw
+		a 
+			font-size: 4.266vw
+	.row-two-col
+		flex-direction: column
+	.row-two-col .item-box.item-box--top
+		width: 100%
+	.row-two-col .item-box__col:nth-child(2)
+		max-width: 100%
+	.row-two-col .item-box__col:last-child
+		max-width: 100%
+	.contact-wrapper
+		width: 100%
+		display: flex
+		justify-content: space-between
+		padding: 1.563vw
+		margin-left: 0
+		background: url('../img/contact-mobil-bg.png')
+		background-size: cover
+		background-repeat: no-repeat
+	.contact-wrapper__header
+		padding-left: 1.563vw 
+		img 
+			width: 10vw
+			margin-right: 2.5vw
+		.text 
+			font-size: 3.734vw
+			line-height: 1.286
+			span 
+				display: block
+				font-size: 4.266vw
+	.contact-wrapper__button,
+	.contact-wrapper--inside .contact-wrapper__button
+		width: 19.375vw
+		font-size: 2.797vw
+		padding: 1.563vw
+		img 
+			width: 4.063vw
+	.contact-wrapper__button--aqua 
+		margin-right: 1.250vw
+	.contact-wrapper__button--grey
+		img 
+			width: 4.3vw
+	.contact-wrapper__buttons
+		padding-top: 0
+	.item-box-col-8
+		width: 100%
+		padding: 0
+	.item-box__line--header
+		font-size: 3.2vw
+	.item-box-col-8 .item-box__line--header--lg a
+		font-size: 2.400vw
+		color: $aqua
+	.item-box-col-8 .item-box__line--header--lg
+		padding: 3.125vw
+	.table-header
+		font-size: 2.4vw
+	.table-row
+		font-size: 2.134vw
+		display: none
+		padding: 1.875vw 2.5vw
+		border-bottom-width: 1px
+	.table-row:first-child,
+	.table-row:nth-child(2),
+	.table-row:nth-child(3),
+	.table-row:nth-child(4),
+	.table-row:nth-child(5),
+		display: flex
+	.table-col__img
+		width: 2.8vw
+	.table-row .table-col img
+		width: 2.2vw
+	.table-row:before
+		width: 0.938vw
+	.item-box-col-4
+		width: 48.5%
+		padding: 0
+	.item-header-mobil
+		display: block
+	.item-header-desktop
+		display: none
+	.item-box__line
+		padding: 1.875vw 3.125vw
+		font-size: 2.4vw
+		border-bottom-width: 1px
+	.item-box__line.sub-item
+		padding-left: 6.875vw
+		padding-right: 5vw
+	.item-box__line-img
+		width: 3.750vw
+		img
+			width: 2.813vw
+	.item-box__line.sub-item .item-box__line-img
+		width: 4.688vw
+	.row-two-col--2
+		flex-direction: row
+		display: flex
+		flex-wrap: wrap
+		.item-box-col-4:first-child 
+			margin-right: 1.5%
+		.item-box-col-4:nth-child(2) 
+			margin-left: 1.5%
+	.mobil-hide
+		display: none
+	.item-box__line--header
+		img 
+			width: 3.438vw
+	.desktop-hide
+		display: block
+	.mobil-platforms__text
+		text-align: center
+		font-size: 3.200vw
+		font-weight: 500
+		padding: 1.875vw
+	.mobil-platforms__button
+		width: 100% 
+		display: flex
+		align-items: center
+		justify-content: center
+		height: 10.625vw
+		border-radius: 2px
+		font-family: $titili-reg
+		font-weight: 400
+		
+		a 
+			font-size: 3.375vw
+			color: #f4f4f4
+		img 
+			width: 4.2vw
+	.mobil-platforms__button--aqua
+		background: $aqua
+	.mobil-platforms__content
+		padding-left: 1.250vw
+		padding-right: 1.250vw
+		padding-bottom: 1.563vw
+	.mobil-platforms__button--blue
+		background: $blue
+		margin-top: 1.563vw
+	.education-video-text
+		display: flex
+		font-size: 3.734vw
+	.education-video
+		padding-left: 0 
+		padding-right: 0
+		padding: 2.813vw 0
+		width: 100%
+		justify-content: space-between
+		padding-left: 4vw
+		padding-right: 4vw
+		span 
+			margin-left: 1.5vw
+			font-family: $sans1
+			font-weight: 600
+		svg 
+			width: 8.750vw
+			height: 8.750vw
+			min-width: 8.750vw
+			min-height: 8.750vw
+			margin-left: 1.5vw
+	.education-videos 
+		flex-direction: column
+	.education-video-text
+		align-items: flex-end
+	.education-video--1 
+		margin-bottom: 1.250vw
+	.footer__container 
+		padding: 1vw 0
+		font-size: 3.200vw
+		img 
+			width: 3.750vw
+			margin-right: 1.250vw
+	.footer-right
+		padding-left: 9vw
+	.mobil-platforms__button a
+		img
+			margin-right: 1vw
+	.item-box-col-4--right
+		width: 100%
+		max-width: 100%
+	.row-two-col--2 .item-box-col-4:nth-child(2)
+		margin-left: 0
+	.contact-wrapper-col-4 .contact-wrapper__header img
+		width: 10vw
+	.item-box--inside
+		margin-bottom: 1.250vw
+		margin-top: 1.250vw
+	.hizli-logo
+		width: 33.750vw
+	.title-18-semi-bold
+		font-size: 4vw
+	.avant__items
+		display: flex
+		flex-wrap: wrap
+		justify-content: center
+	.avant__item 
+		width: 50%
+		margin-top: 3.125vw
+
+		font-size: 2.800vw
+		.avant__text br 
+			display: none
+	.avant__items
+		.avant__item:last-child 
+			width: 100% 
+			justify-content: center
+
+	.avant__item-icon
+		width: 8.438vw
+		img 
+			width: 6.563vw
+	.avant__items
+		padding-top: 0
+		padding-bottom: 0
+	.payment-metods
+		flex-wrap: wrap
+		display: flex
+		padding: 0
+		a 
+			width: 33.3%
+			display: flex
+			align-items: center
+			justify-content: center
+			margin: 1.563vw 0
+		a:first-child 
+			order: 2
+			
+		a:nth-child(2)
+			order: 1
+		a:nth-child(3)
+			order: 3
+		a:nth-child(4)
+			order: 4
+		a:nth-child(5)
+			order: 5
+		a:nth-child(6)
+			order: 6
+	.text-logo
+		img 
+			width: 6.250vw
+	.text-logo__img
+		width: 7.188vw
+	.text-logo span
+		font-size: 4.537vw
+	.papara-logo
+		width: 19.063vw
+	.visa-logo
+		width: 13.438vw
+	.mastercard-logo 
+		width: 12.188vw
+	.bitcoin-logo
+		width: 21.250vw
+	.profile__tab,
+	.profile__tab-link
+		font-size: 3.734vw
+	.profile__tab:first-child:before,
+	.profile__tab-link:first-child:before
+		width: 3px
+	.profile__tab,
+	.profile__tab-link
+		padding-top: 2.813vw 
+		padding-bottom: 2.813vw
+	.profile__tab-item
+		padding: 3.125vw
+	.form-title
+		font-size: 3.2vw
+		margin-bottom: 0.5vw
+	.form-row
+		margin-top: 0
+		flex-direction: column
+	.input-wrapper 
+		width: 100%
+		margin-top: 2.813vw
+	.input-label
+		font-size: 3.2vw
+	input,
+	select 
+		font-size: 3.2vw
+		height: 10.625vw
+		padding: 0 1.875vw
+	select
+		background-position: right 3.125vw center
+	.form-row--center
+		margin-top: 2.813vw
+	.form-title
+		br 
+			display: none
+	.profile__tab--three
+		flex-grow: 1
+		width: 100%
+		padding-left: 2.813vw
+		padding-right: 2.813vw
+
+	.profile__tabs
+		//justify-content: stretch
+	.profile__tab,
+	.profile__tab-link
+		white-space: nowrap
+	.title-semi-bold
+		font-size: 3.734vw
+		margin-bottom: 1.500vw
+	.row-two-col .item-box.item-box--top.item-box--grey
+		box-shadow: 0px 0px 2px 0px rgba(0, 0, 0, 0.25)
+	
+		.item-box__row
+			justify-content: flex-start
+		.item-box__col:first-child
+			max-width: 100%
+			width: auto
+			padding-left: 1vw
+			min-width: 0vw
+			padding-right: 2.2vw
+		.item-box__col:nth-child(2)
+			max-width: 50vw
+			padding-left: 2.2vw
+			padding-right: 2.2vw
+
+		.item-box__col:nth-child(3)
+			padding-left: 2.2vw
+			width: auto
+			max-width: 100%
+			display: flex
+			justify-content: flex-start
+			padding-right: 0
+		.item-box__col
+
+			margin-bottom: 0
+		.col-title
+			font-size: 2.400vw	
+		.col-text
+			font-size: 3.734vw
+	.payment-metods__tab-text
+		font-size: 3.2vw
+	.payment-metods__tab
+		min-height: 13.438vw
+		box-shadow: 0px 0px 2px 0px rgba(0, 0, 0, 0.25)
+
+		.img-wrapper 
+			width: 8.125vw
+			img 
+				width: 6.563vw
+	.payment-metods__tab--papara
+		.img-wrapper
+			width: 13.750vw
+
+			img 
+				width: 100%
+	.payment-metods__tab
+		width: calc(33.3% - 0.938vw)
+	.payment-metods__tabs-wrapper
+		margin-top: 6.250vw
+	.payment-metods__tab--papar .papare-logo
+		max-width: 11.875vw
+	.papara-page-text img
+		max-width: 3.750vw
+		width: 3.750vw
+	.payment-metods__tab--papar .papare-logo
+		margin-left: 6vw
+		margin-top: 1vw
+	.top-arrow
+		right: 0vw
+
+	.bottom-arrow
+		top: 100%
+	.payment-metods__tab--papar div
+		position: relative 
+		top: 0.5vw
+	.para-cek__item-text
+		font-size: 1.866vw
+		text-align: center
+		font-weight: 600
+	.para-cek-item-wrapper
+		min-height: 12vw
+	.success-wrapper img
+		width: 25vw
+
+	.succes-title
+		font-size: 4.269vw
+
+	.succes-text
+		font-size: 3.734vw
+
+	.form-button--succ
+		width: 100%
+	.item-box--right .payment-metods
+		flex-direction: row
+		flex-wrap: wrap
+		.visa-masrercard
+			width: auto 
+		a 
+			width: 29vw
+	.item-box--right
+		.payment-metods a:first-child
+			order: 1
+		.payment-metods a:nth-child(2)
+			order: 2
+		.payment-metods a:nth-child(3)
+			order: 3
+		.visa-masrercard
+			order: 4 
+		.payment-metods a:last-child
+			order: 5
+	.item-box--right .text-logo span
+		font-size: 4.541vw
+	.item-box--right .text-logo__img
+		width: 7.188vw
+	.item-box--right .text-logo img
+		width: 5.625vw
+	.item-box--right .papara-logo
+		width: 18.750vw
+	.item-box--right .visa-logo
+		width: 13.750vw
+	.item-box--right .mastercard-logo
+		width: 12.500vw
+	.item-box--right .bitcoin-logo
+		width: 21.250vw
+	.profile__tab-item--not-padding
+		padding-left: 0 
+		padding-right: 0
+	.title-semi-bold--padding-left
+		padding-left: 2.5vw
+	.page-pagination
+		padding-top: 3.125vw
+		a
+			font-size: 4vw
+			margin: 0 3.594vw
+		a:nth-child(4),
+		a:nth-child(5)
+			display: none
+		span 
+			margin: 0 3.594vw
+	.item-box--right .payment-metods a
+		margin-bottom: 2vw
+	.ib-content-text
+		font-size: 3.2vw
+	.menu-link:hover:after,
+	.menu-link.active:after
+		width: 4vw
+	.ib-header__footer
+		padding-top: 5.313vw
+		padding-bottom: 3.438vw
+		align-items: flex-end
+		.title-semi-bold
+			margin-bottom: 0 
+	.id-header__sum-value
+		font-size: 5.600vw
+	.ib-header__sum
+		flex-direction: column 
+		align-items: flex-end 
+		text-align: right
+	.id-header__sum-title
+		line-height: 1
+		font-size: 2.4vw
+	.ib-header
+		padding-left: 2.5vw 
+		padding-right: 2.5vw
+	.profile__tab-content--ib
+		.table-row 
+			display: flex
+		.table-col:last-child
+			min-width: 20.938vw
+
+	.table-col--isim
+		min-width: 32vw
+	.table-col--first
+		min-width: 20vw
+	.ib-table
+		.table-row .table-col
+			font-size: 2.8vw
+	.table-col__btn
+		min-width: 20.938vw
+		height: 5.938vw
+		font-size: 3.200vw
+	.row-two-col .item-box.item-box--top.item-box--grey .item-box__row--ib-wrap .item-box__col:nth-child(2)
+		max-width: 45%
+		padding-right: 0
+		min-width: 0
+
+
+	.item-box__row--ib-wrap .item-box__col-wrapper.item-box__col-wrapper--id
+		min-width: 20vw
+		flex-direction: column
+		align-items: flex-end
+	.row-two-col .item-box.item-box--top.item-box--grey .item-box__row.item-box__row--ib-wrap
+		justify-content: space-between
+		.item-box__col--money-value-id
+			margin-top: 1vw
+	.item-box__row--ib-wrap .item-box__col-wrapper
+		min-width: 0
+	.item-box--grey--ib
+		margin-bottom: 4.375vw
+	.ib-details-table .table-col:last-child
+		min-width: 5%
+	.hesap-ac__item-button
+		width: 50%
+		font-size: 4.266vw
+	.hesap-ac-text
+		font-size: 2.8vw
+		max-width: 90%
+		margin-bottom: 5.3vw
+	.hesap-ac__items 
+		flex-wrap: wrap
+		padding-bottom: 1vw
+	.hesap-ac__item
+		width: 29.5%
+		height: 12.500vw
+		font-size: 5.116vw
+	.hesap-ac__button,
+	.hesap-ac__button2
+		width: 100%
+		height: 10.625vw
+		font-size: 3.731vw
+	.hesap-ac__button-wrapper
+		margin-bottom: 6.250vw
+	.item-gercec
+		.item-box__row
+			flex-wrap: wrap
+		.item-gercec-col:last-child,
+		.item-gercec-col2:last-child
+			width: 100%
+			order: 1
+			margin-bottom: 2vw
+			.item-gercec-col-wrapper
+				display: flex
+				align-items: center
+				.item-gercec__val
+					margin-left: 2vw
+		.item-gercec-col:nth-child(1),
+		.item-gercec-col2:nth-child(1)
+			order: 2
+			width: 50%
+			.item-gercec-col-wrapper-btn
+				//background: transparent
+				//color: $blue
+				//border: 1px solid $blue
+		.item-gercec-col:nth-child(2),
+		.item-gercec-col2:nth-child(2)
+			order: 3
+			width: 50%
+		.item-gercec-col:after,
+		.item-gercec-col2:after
+			display: none
+		.item-gercec-col-wrapper
+			font-size: 3.2vw
+		.item-gercec-col-wrapper-btn
+			height: 13.750vw
+			width: 40vw
+			border-radius: 0
+	.item-gercec-mobil-link
+		display: block
+		margin: 0 auto
+		text-align: center
+		padding-top: 3.750vw
+		text-decoration: underline
+		color: $blue
+		font-size: 3.731vw
+	.item-gercec-mobil-link:hover 
+		color: $blue
+	.hesap-ac__item-button
+		height: 10.625vw
+	.gercile-header-right
+		display: none
+	.tab-gercile
+		width: 100%
+		.item-gercec-col:nth-child(2),
+		.item-gercec-col2:nth-child(2)
+			margin-bottom: 0
+			.item-gercec-col-wrapper
+				flex-direction: column
+	.item-gercec .item-gercec-col:nth-child(2).item-gercec-col3,
+	.item-gercec .item-gercec-col2:nth-child(2).item-gercec-col3
+		width: 100%
+		margin-top: 4vw
+	.demo-link
+		display: none
+	.footer 
+		height: 6.5vw
+		align-items: center
+		.footer__container 
+			display: flex 
+			align-items: center
+	body 
+		padding-bottom: 6.5vw
+	.form-button
+		width: 100%
+		height: 10.625vw
+		padding-top: 0 
+		padding-bottom: 0
+		font-size: 3.734vw
+	.open-account__form-row
+		flex-direction: column
+		align-items: flex-start
+		.open-account__first-col,
+		.open-account__input-col,
+		.open-account__third-col
+			width: 100%
+	.open-account
+		width: 100%
+	.open-account__text
+		font-size: 3.197vw
+		margin-bottom: 1.250vw
+	.open-account__form-row
+		padding-top: 2.188vw
+	.open-account__first-col
+		margin-bottom: 1.250vw
+	.open-account__icon
+		width: 7.188vw
+		img 
+			max-width: 5.625vw
+	.open-account__label
+		font-size: 3.197vw
+	input 
+		border-radius: 1px
+	.form-button
+		border-radius: 1px
+	.open-account__third-col
+		padding-left: 0
+	.open-account__third-col
+		.input-error
+			font-size: 3.197vw
+			margin-top: 0.5vw
+	.open-account__link
+		font-size: 3.197vw
+	.open-account__form-row.open-account__form-row--footer
+		padding-bottom: 0
+	.advant-account
+		padding-top: 0 
+		padding-bottom: 0
+	.open-account__label
+		br 
+			display: none
+	.pen-account__form-row--password
+		padding-top: 1vw
+		.open-account__input-col a
+			font-size: 3.200vw
+	.advant-login
+		padding-top: 0 
+		padding-bottom: 0
+	.login-page-header
+		font-size: 3.2vw
+		height: 10.625vw
+	.item-box
+		box-shadow: 0 0.313vw 0.938vw 0 rgba(0, 0, 0, 0.2)
+		border-radius: 1px
+	.item-box-wrapper
+		box-shadow: none
+	.item-box.item-box--last.item-box-pm
+		//margin-top: 0
+	.item-box-pm-oa
+		margin-top: 0
+	.row-two-col--2
+		margin-bottom: 0
+	.button
+		border-radius: 3px
+	.card
+		min-height: 48vw
+	.item-box__col--detail--front
+		min-width: 100% 
+		max-width: 100%
+	.item-box__col--buttons
+		min-width: 100%
+		max-width: 100%
+		.hesap-ac__item-button
+			width: 100%
+		.hesap-ac__item-buttons
+			width: 100%
+			padding-top: 0
+
+	.item-box__col--buttons:after 
+		display: none
+	.item-box__row-first
+		padding-bottom: 0
+	.item-box__col-wrapper
+		display: flex 
+		flex-direction: column
+	.item-box__col--money
+		.item-box__col-wrapper
+			flex-direction: row
+	.item-box__col--detail .col-title
+		font-family: $sans1
+		font-weight: 400 
+		font-size: 2.8vw
+	.hesap-ac__item-button--grey
+		box-shadow: none
+		background: transparent
+	.hesap-ac__item-button--aqua
+		box-shadow: 0 0.313vw 0.938vw 0 rgba(0, 0, 0, 0.2)
+	.item-box__col:after
+		height: 80% 
+		transform: translateY(-50%)
+		top: 50%
+	.item-box--top .item-box__col--detail
+		margin-top: 1vw
+	.guncule-col-mobile
+		display: flex
+	.green-col
+		width: 50% 
+		min-width: 50% 
+		max-width: 50%
+		height: 7.250vw
+		margin-top: 1.5vw
+	.green-col:before
+		content: ''
+		position: absolute
+		height: 100%
+		width: 0.938vw
+		top: 0
+		left: 0
+		border-radius: 4px
+		display: block
+		background: #d9dbe1
+		display: block
+	.green-col--first:before
+		display: none
+	.green-col:after 
+		display: none
+	.item-box__col--detail .col-title--aqua 
+		color: $aqua
+		margin-top: 1.5vw
+	.item-box__col.guncule-col-mobile:after 
+		display: none
+	.back 
+		.item-box--top .item-box__col:nth-child(2)
+			min-width: 18vw
+		.item-box__col:first-child
+			min-width: 36vw
+		.item-box__col.guncule-col-mobile
+			padding-left: 4.375vw
+		.green-col--last 
+			display: flex 
+			justify-content: flex-start
+			padding-left: 4.375vw
+		.green-col--first 
+			display: flex 
+			justify-content: flex-end
+			padding-right: 4.375vw !important
+	.mobil-platforms__button
+		box-shadow: 0 0.313vw 0.938vw 0 rgba(0, 0, 0, 0.2)
+		span 
+			font-weight: 600
+	.mobil-platforms__button
+		border-radius: 0.313vw
+	.item-box__line--header
+		font-size: 3.2vw
+	.time-text
+		font-size: 1.719vw
+	.table-col-line
+		max-width: 5vw
+	.table-col-line
+		max-width: 15vw 
+		line-height: 1
+	.row-two-col .item-box.item-box--top.item-box--grey .item-box__row.item-box__row-gerc
+		justify-content: space-between
+		display: flex
+	.row-two-col .item-box.item-box--top.item-box--grey .item-box__row-gerc .item-box__col:nth-child(2)
+		padding-right: 2.7vw
+	.row-two-col .item-box.item-box--top.item-box--grey .item-box__row-gerc .item-box__col:nth-child(3)
+		padding-right: 1vw
+	.row-two-col .item-box.item-box--top.item-box--grey .item-box__row-gerc .item-box__col:first-child
+		padding-right: 4vw
+	.hesap-ac__item-button,
+	.item-gercec .item-gercec-col-wrapper-btn,
+	.item-gercec-col.active .item-gercec-col-wrapper-btn, 
+	.item-gercec-col2.active .item-gercec-col-wrapper-btn
+		border-radius: 0.313vw
+	.text-box__title
+		span 
+			font-family: $sans1-semi-bold 
+			font-weight: 600
+	.no-margin
+		margin-top: 0
+	select
+		background-size: 6.875vw
+	.ui-datepicker-trigger
+		width: 6.875vw
+	.row-two-col .item-box.item-box--top.item-box--grey
+		//box-shadow: 0px 0px 0.625vw 0px rgba(0, 0, 0, 0.25)
+		box-shadow: none 
+		border: 1px solid #efefef
+	.payment-metods__tab
+		border-radius: 0.313vw
+		box-shadow:  none
+		border: 1px solid #efefef
+	.payment-metods__tabs .payment-metods__tab.transparent
+		border: none
+	.payment-metods__tab-text
+		font-family: $sans1-bold
+		font-weight: 700
+	.hesap-ac__item,
+	.table-col__btn
+		box-shadow: 0px 0.313vw 0.938vw 0px rgba(0, 0, 0, 0.2)
+		border-radius: 0.313vw
+	.form-button
+		box-shadow: 0px 0.313vw 0.938vw 0px rgba(0, 0, 0, 0.2)
+	.date-wrapper input::placeholder 
+		color: #7f8389 
+	.table-row .table-col:first-child
+		width: 15vw
+		min-width: 15vw
+	.table-row .table-col:nth-child(2)
+		width: 15vw
+		min-width: 15vw
+	.table-row .table-col:nth-child(3)
+		width: 19vw
+		min-width: 19vw
+	.table-row .table-col:nth-child(4)
+		width: 15vw
+		min-width: 15vw
+	.table-row .table-col:nth-child(5)
+		width: 14vw
+		min-width: 14vw
+	.table-row .table-col:nth-child(6)
+		width: 20vw
+		min-width: 20vw
+	.profile__tab-content--ib .table-col:last-child
+		width: 16.820vw
+		min-width: 16.820vw
+	.profile__tab-content--ib .table-row
+		//padding-right: 0
+	
+	.ib-table
+		.table-row .table-col:first-child
+			width: 22.188vw
+		.table-row .table-col:nth-child(2)
+			width: 33.125vw
+		.table-row .table-col:nth-child(3)
+			width: 15.313vw
+		.table-row .table-col:nth-child(4)
+			width: 20.625vw
+		.table-row
+			//padding-right: 5.938vw
+	.table-col-no-wrap
+		white-space: nowrap
+	.ib__box-text
+		font-size: 3.200vw
+		line-height: 1
+		max-width: 90%
+	.ib__box-value
+		font-size: 3.731vw
+	.ib__box 
+		padding-top: 1.563vw
+		padding-bottom: 1.563vw
+		border: 0.313vw solid #efefef
+		box-shadow: none
+		border-radius: 0.313vw
+		width: 49.2%
+	.ib__boxes 
+		padding-left: 2.5vw 
+		padding-right: 2.5vw
+		margin-bottom: 3.125vw
+	.ib__btn
+		text-transform: none
+		height: 10.625vw
+		border-radius: 0.313vw
+		box-shadow: 0px 0.313vw 0.938vw 0px rgba(0, 0, 0, 0.2)
+		background-color: rgb(26, 50, 76)
+		font-size: 3.731vw
+	.table-row--ib.table-row .table-col:first-child.table-col--num
+		width: 7.500vw
+		min-width: 7.500vw
+		padding-left: 0.938vw
+		border-width: 0.938vw
+		margin-right: 0.938vw
+		font-size: 2.800vw
+	.table-row--ib.table-row
+		padding-left: 0
+	.table-row--ib.table-row .table-col:nth-child(2).table-col--first
+		min-width: 15.625vw
+		width: 15.625vw
+	.ib-table .table-row.table-row--ib .table-col
+		font-size: 2.4vw
+	.table-row--ib.table-row .table-col:nth-child(3).table-col--isim
+		width: 18.750vw
+		min-width: 18.750vw
+	.table-row--ib.table-row .table-col:nth-child(4).table-col-varlik
+		min-width: 11.250vw
+		width: 11.250vw
+	.table-row--ib.table-row .table-col:nth-child(5).table-col--bakiye
+		min-width: 11.875vw
+		width: 11.875vw
+	.table-row--ib.table-row .table-col--hakindes
+		min-width: 10.938vw
+		width: 10.938vw
+	.profile__tab-content--ib .table-row--ib.table-row .table-col:last-child
+		width: auto
+	.table-row--ib.table-row .table-col__btn
+		width: 14.688vw
+		max-width: 14.688vw
+		min-width: 14.688vw
+		font-size: 3.2vw
+	.item-box--right--padding
+		margin-bottom: 1.250vw
+		margin-top: 1.563vw
+	.back-wrapper--ib
+		flex-direction: column
+		justify-content: center 
+		align-items: flex-start
+		padding-bottom: 0
+		margin-bottom: 0
+		.ib-details__btn
+			margin-top: 2.500vw
+			font-size: 3.731vw
+			width: 100%
+			height: 10.625vw
+			border-radius: 0.313vw
+			box-shadow: 0px 0.313vw 0.938vw 0px rgba(0, 0, 0, 0.2)
+	.back-wrapper a
+		display: flex 
+		align-items: center
+		svg 
+			width: 5.313vw
+			margin-right: 1.563vw
+		span 
+			font-size: 2.800vw
+	.item-box--det
+		margin-top: 2.500vw
+	.header-ib-row
+		display: flex
+	.item-box.item-box--grey--ib.item-box--det .item-box__row.item-box__row-ib-det.item-box__row--ib-wrap .item-box__col--money
+		min-width: 100%
+		width: 100% 
+		max-width: 100%
+		justify-content: flex-start
+		margin-bottom: 3.125vw
+		margin-left: 0 
+		padding-left: 0
+	.item-box.item-box--top.item-box--grey.item-box--grey--ib.item-box--det
+		flex-wrap: wrap
+
+	.item-box.item-box--grey--ib.item-box--det .item-box__col:after
+		top: 50%
+	.item-box__row-ib-det .item-box__col--money-value
+		font-size: 4.266vw
+		margin-bottom: 1.250vw
+	.row-two-col .item-box.item-box--top.item-box--grey .item-box__row.item-box__row--ib-wrap.item-box__row-ib-det
+		justify-content: center
+	.item-box.item-box--grey--ib.item-box--det .item-box__col--bakiye
+		width: 18.750vw
+		justify-content: flex-start
+		padding-left: 0
+	.item-box.item-box--grey--ib.item-box--det .item-box__col--bakiye1:after 
+		display: none
+	.item-box.item-box--grey--ib.item-box--det .item-box__col--bakiye.item-box__col--varlik
+		width: 23.750vw !important
+		min-width: 23.750vw !important
+		max-width: 23.750vw !important
+		justify-content: center !important
+		padding-left: 0 !important
+	.item-box__col.item-box__col--geri
+		min-width: 0 
+		width: 18.750vw
+		justify-content: flex-start
+		padding-left: 4vw !important
+		.item-box__col-wrapper
+			align-items: flex-start 
+	.col-title--mail.col-title--meta
+		margin-bottom: 0
+	.item-box.item-box--grey--ib.item-box--det .item-box__col:after
+		height: 100%
+		width: 0.938vw
+	.ib-details-table .table-col--namber
+		border-width: 0.938vw
+		margin-right: 1.250vw
+		font-size: 2.800vw
+	.item-box-ib--detail a
+		margin-bottom: 0
+	.item-box-ib--detail
+		margin-bottom: 1.250vw
+		margin-top: 1.563vw
+	.table-herkile-ib .table-row .table-col:nth-child(2),
+	.table-herkile-ib .table-row .table-col:nth-child(3),
+	.table-herkile-ib .table-row .table-col:nth-child(4),
+	.table-herkile-ib .table-row .table-col:nth-child(5)
+		width: 25%
+	.item-box.item-box-ib-herek
+		padding-top: 0
+		padding-bottom: 0
+		margin-bottom: 1.250vw
+		margin-top: 1.563vw
+	.row-two-col--2 .item-box-col-4:nth-child(2) 
+		margin-right: 0
+	.title-semi-bold
+		font-weight: 600
+	.ib-details-table .table-row .table-col:first-child
+		min-width: 7.8vw
+	.ib-details-table .table-row .table-col:nth-child(3)
+		min-width: 13vw
+	.table-herkile-ib .table-row .table-col:first-child
+		min-width: 0
+	.ib-header__footer.ib-header__footer--herk
+		padding-top: 0
+
+
+
+
+
+
+
+
+
+
+
+
+	
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+/* Small Devices, Tablets */
+@media only screen and (max-width : 768px)
+	/**/
+	
+
+
+/* Extra Small Devices, Phones */
+@media only screen and (max-width : 480px)
+	/**/
+	.top-header
+		min-height: 10.938vw
+	.header 
+		font-size: 3.466vw
+	.header__user
+		
+		img 
+			width: 6.250vw
+	.header__user-wrap
+		padding: 1vw
+		padding-left: 4vw
+		padding-right: 4vw
+	.header__menu ul li
+		padding: 0 2vw
+		svg 
+			width: 4.688vw
+	.header__menu ul li:first-child 
+		margin-left: 3vw
+	.header__menu ul li:before
+		width: 0.938vw
+		height: 7.188vw
+	.menu-link:hover:after 
+		width: 9.063vw
+	.menu-link:after
+		height: 0.313vw
+		bottom: -0.625vw
+	.payment-metods__tab--papar .papare-logo
+		margin-top: -1vw
+	.menu-link:hover:after,
+	.menu-link.active:after
+		width: 8vw
+	.menu-link svg 
+		margin-right: 1vw
+	.popup-item
+		font-size: 3.497vw
+	.popup__content
+		max-width: 93.750vw
+	.popup__content__header
+		font-size: 5.600vw
+		height: 20.938vw
+	.popup-item svg
+		width: 7.813vw
+		height: 7.813vw
+		min-width: 7.813vw
+		min-height: 7.813vw
+	.popup-item__text
+		font-size: 3.2vw
+	.popup-item 
+		padding: 1.875vw 2.813vw 1.875vw 2.500vw
+	.payment-metods__tab.payment-metods__tab--papar .logo-papar
+		display: flex 
+		justify-content: center
+	.table-herkile-ib
+		
+		
+		
+		.table-row .table-col:nth-child(4)
+			min-width: 23%
+		.table-row .table-col:nth-child(3)
+			min-width: 24%
+		.table-row .table-col:nth-child(5)
+			width: 20%
+			min-width: 20%
+		.table-row .table-col:nth-child(6)
+			width: 15%
+			min-width: 15%
+		.table-row .table-col:nth-child(2)
+			min-width: 20%
+	.back-wrapper a
+		font-size: 2.8vw
+	.payment-metods__tab.payment-metods__tab--papar div
+		display: flex
+		justify-content: center
+		.logo-papar 
+			width: 80%
+	.ib-details-table .table-row .table-col:first-child
+		min-width: 7.8vw
+	.ib-details-table .table-row .table-col:nth-child(3)
+		min-width: 13vw
+
+
+
+	
+
+
+	
+
+		
+
+
+/* Custom, iPhone Retina */
+@media only screen and (max-width : 320px)
+	/**/
+
+
+/*==========  Mobile First  ==========*/
+
+/* Custom, iPhone Retina */
+@media only screen and (min-width : 320px)
+	/**/
+
+
+/* Extra Small Devices, Phones */
+@media only screen and (min-width : 480px)
+	/**/
+
+
+/* Small Devices, Tablets */
+@media only screen and (min-width : 768px)
+	/**/
+
+
+/* Medium Devices, Desktops */
+@media only screen and (min-width : 992px)
+	/**/
+
+
+/* Large Devices, Wide Screens */
+@media only screen and (min-width : 1200px)
+	/**/
+
+
+
+
+
