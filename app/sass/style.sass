@@ -3,12 +3,11 @@
 
 //start global style
 body 
-	font-family: $poppins
+	font-family: $mont
 	font-size: 14px
 	background: #e8eaf5
-	font-weight: $reg
+	font-weight: 500
 	color: $blue-text
-	font-weight: 400
 	margin-bottom: 0
 	position: relative
 	min-height: 100vh
@@ -32,7 +31,7 @@ button:focus
 .link-aqua
 	color: $aqua
 	text-decoration: underline
-	font-family: $sans1-bold
+	font-weight: 700
 .link-aqua:hover 
 	color: #319286
 	text-decoration: underline
@@ -41,7 +40,7 @@ button:focus
 
 //start top header style
 .top-header 
-	background: $blue
+	background: #fff
 	min-height: 60px
 	width: 100%
 .button 
@@ -72,21 +71,16 @@ button:focus
 
 //start header style
 .header 
-	background: #f8f8f8
+	background: #00703d
 	font-size: 16px 
-	font-weight: $semi-bold
-	font-family: $titili-semi-bold
-	font-weight: 600
+	font-family: $mont
+	font-weight: 500
 	box-shadow: 2.121px 2.121px 3.92px 0.08px rgba(0, 0, 0, 0.1)
 	.wrapper 
 		display: flex 
 		justify-content: space-between 
 		align-items: center
 .header__user
-	border-top: 1px solid #00eea7
-	border-left: 1px solid #00c48a
-	border-bottom: 1px solid #008a61
-	border-right: 1px solid #00b67f
 	img 
 		width: 30px 
 		height: 30px
@@ -95,14 +89,7 @@ button:focus
 	align-items: center
 	width: 100% 
 	height: 100%
-	border-top: 1px solid #00d495
-	border-left: 1px solid #00b67f
-	border-bottom: 1px solid #00a171
-	border-right: 1px solid #00b67f
-
 	padding: 15px 25px
-
-
 	
 .header__menu
 	ul 
@@ -123,28 +110,35 @@ button:focus
 .header__user:hover 
 	color: #fff
 	background: $aqua-dark
-	border-right: 1px solid #068a62
-	border-left: 1px solid #05996c
-	border-bottom: 1px solid #027d58
-	border-top: 1px solid #00c68a
-	.header__user-wrap
-		border-right: 1px solid #068a62 
-		border-left: 1px solid #068a62
-		border-bottom: 1px solid #04825c
-		border-top: 1px solid #03ab78
 .menu-link
-	color: #a1adbb
+	color: #9fbfb0
 	position: relative
 	transition: all .5s
 	display: flex
-	align-items: center 
+	align-items: center
+	z-index: 1 
 	svg 
 		width: 25px
 		height: 25px
 		margin-right: 5px
+		display: none
 .menu-link:hover, 
 .menu-link.active
-	color: $blue
+	color: #fff
+.menu-link:hover:before, 
+.menu-link.active:before
+	content: ''
+	height: 10px 
+	width: 100%
+	position: absolute 
+	bottom: 0 
+	left: 6px
+	background: #49a141
+	border-radius: 15px
+	z-index: -1
+
+
+
 .header-svg-green
 	fill: #a1adbb
 .header-svg-dark-green
@@ -167,15 +161,19 @@ button:focus
 	padding: 11px
 	box-shadow: 0px 2px 6px 0px rgba(0, 0, 0, 0.2)
 	border-radius: 2px
+	border-radius: 15px
+
+
+
 .text-box__title
 	padding-top: 9px
 	padding-left: 9px
 	padding-bottom: 20px
 	
 .text
-	font-family: $poppins
+	font-family: $mont
 	color: $blue-text
-	font-weight: 400
+	font-weight: 500
 	span 
 		font-weight: 600
 
@@ -187,36 +185,26 @@ button:focus
 	display: flex
 	align-items: center 
 	cursor: pointer
-	
+	.cls-1 
+		fill: #7ac144 
 	svg 
 		width: 25px 
 		height: 25px
 		margin-left: 10px
-		.add-cls-1 
-			fill: #c2ae38
-		.add-cls-2 
-			fill: #064a5f
-		.add-cls-4
-			fill:#fff
-	svg:hover
-		.add-cls-1 
-			fill: #c2ae38
-		.add-cls-2 
-			fill: #05303a
-		.add-cls-4
-			fill:#fff
-.open-new
-	font-family: $titili-reg 
-	font-weight: $reg
+
+
+
 
 .open-new:hover 
 	color: $blue
 	font-weight: 600
 	text-decoration: underline
+	svg 
+		.cls-1
+			fill: #00703d
 .col-title
 	text-transform: uppercase
 	font-size: 13px
-	font-family: $titili-semi-bold
 	font-weight: 600
 
 .item-box__col--money-img
@@ -228,7 +216,7 @@ button:focus
 	justify-content: space-around
 .item-box__col--money
 	display: flex
-	padding-right: 25px
+	padding-right: 10px
 	.item-box__col-wrapper
 		display: flex 
 		align-items: center
@@ -236,9 +224,11 @@ button:focus
 		font-size: 14px
 .item-box__col--money-value
 	font-size: 28px 
-	font-weight: 700
+	font-weight: 900
 	color: $aqua
 	line-height: 0.9
+	font-family: $lato
+
 
 .item-box__col
 	//margin-bottom: 10px
@@ -262,23 +252,26 @@ button:focus
 .item-box__row .item-box__col:last-child:after 
 	display: none
 .col-text
-	font-weight: 600
+	font-family: $lato
+	font-weight: 900
+	color: #37463f
 	font-size: 16px
 .col-title.col-title--aqua
 	color: $aqua
 .item-box__col--detail .col-title.col-title--aqua:hover 
-	color: #319286
+	color: #00703d
 	text-decoration: underline
 .col-link
 	text-align: center 
-	font-family: $titili-reg
-	font-weight: 400
+	font-weight: 600
 	text-decoration: underline
 	font-size: 14px
 	line-height: 1.2
-.col-link:hover 
-	font-family: $titili-semi-bold
-	font-weight: 600
+	color: #7ac144
+.item-box__col--detail--front .details-link-btn:hover
+	color: #00703d
+	font-weight: 700
+
 .col-wrap
 	display: flex
 	justify-content: space-between
@@ -298,7 +291,7 @@ button:focus
 	.item-box__col:last-child
 		max-width: 90px
 .col-title--blue
-	color: $blue
+	color: #7ac144
 .col-title--blue:hover 
 	color: $blue 
 	text-decoration: underline
@@ -309,6 +302,7 @@ button:focus
 	background: url('../img/contact-bg.png')
 	background-size: cover
 	background-repeat: no-repeat
+	border-radius: 15px
 .contact-wrapper__header
 	display: flex
 	align-items: center
@@ -319,7 +313,6 @@ button:focus
 		margin-right: 8px
 	.text 
 		color: #fff
-		font-family: $titili-reg
 		font-weight: $reg
 //end item box
 .contact-wrapper__buttons
@@ -343,32 +336,23 @@ button:focus
 	background: $aqua
 	color: #fff
 	transition: all 0.3s
-	border-top: 2px solid #00ffb3
-	border-left: 2px solid #00c48a
-	border-bottom: 2px solid #008a61
-	border-right: 2px solid #00b67f
+	border-radius: 15px
+	font-weight: 600
 .contact-wrapper__button--aqua:hover
 	background: $aqua-dark
-	border-top: 2px solid #00d494
-	border-left: 2px solid #05996c
-	border-bottom: 2px solid #027d58
-	border-right: 2px solid #068a62
+	font-weight: 600
 .contact-wrapper__button--aqua:hover 
 	color: #fff
 .contact-wrapper__button--grey
-	background-image: linear-gradient( -27deg, rgb(220,220,220) 0%, rgb(238,238,238) 67%, rgb(255,255,255) 100%)
+	background-color: rgb(240, 240, 240)
 	color: $blue
 	transition: all 0.3s
-	border-top: 2px solid #fbfbfb
-	border-left: 2px solid #fdfdfd
-	border-bottom: 2px solid #939293
-	border-right: 2px solid #e9e9e9
+	border-radius: 15px
+	font-weight: 600
 .contact-wrapper__button--grey:hover 
 	background-image: linear-gradient( -27deg, rgb(208,205,205) 0%, rgb(225,224,224) 67%, rgb(242,242,242) 100%)
-	border-top: 2px solid #f4f3f3
-	border-left: 2px solid #f4f4f4
-	border-bottom: 2px solid #909090
-	border-right: 2px solid #d6d3d3
+	font-weight: 600
+
 
 
 
@@ -388,8 +372,6 @@ button:focus
 .item-box__line
 	width: 100%
 	padding: 8px 14px
-	font-family: $titili-semi-bold
-	font-weight: $semi-bold
 	border-bottom: 2px solid #f1f2f6
 	font-size: 16px
 	display: flex
@@ -493,8 +475,6 @@ button:focus
 	border-bottom: none
 	border-left: none
 	font-size: 15px
-	font-family: $titili-reg
-	font-weight: 400
 	.table-col:nth-child(5)
 		font-family: $sans1
 		font-weight: 400
@@ -520,17 +500,20 @@ button:focus
 	width: 49.5%
 	display: flex 
 	align-items: center
-	font-size: 28px
+	font-size: 26px
 	text-align: center
 	line-height: 1.2
 	color: #fff
 
 	span 
-		font-family: $sans1-semi-bold
 		font-weight: 600
 	svg 
 		width: 64px 
 		height: 64px
+		margin-left: 20px
+	img 
+		width: 64px 
+		height: 63px
 		margin-left: 20px
 		.arrow-cls-1,
 		.arrow2-cls-1
@@ -550,18 +533,17 @@ button:focus
 	background-size: cover 
 	padding: 30px 0
 	padding-left: 50px
+	border-radius: 15px
 	.education-video-text
 		max-width: 309px
-		font-family: $titili-light
-		font-weight: 300
 		span 
-			font-family: $titili-semi-bold
 			font-weight: 600
 .education-video--2
 	background: url('../img/video2.png')
 	background-size: cover 
 	padding: 30px 0
 	padding-left: 50px
+	border-radius: 15px
 	.education-video-text
 		max-width: 309px
 .education-video--1
@@ -616,19 +598,24 @@ button:focus
 	padding: 7px 0
 	color: #fff
 	display: flex 
-	justify-content: space-between 
+	justify-content: flex-end
 	align-items: center
 	font-size: 14px
-	font-family: $titili-reg
 	font-weight: 400
 .footer-right	
 	align-items: center
 	position: relative
 	padding-left: 38px
 	display: flex
+
 	img
 		width: 16px
 		margin-right: 5px
+.footer-left
+	position: absolute 
+	left: 50% 
+	top: 50%
+	transform: translateX(-50%) translateY(-50%)
 .mobil-platforms__button a
 	display: flex 
 	align-items: center
@@ -661,7 +648,7 @@ button:focus
 .item-box--inside
 	margin-bottom: 10px
 .hizli-logo
-	width: 150px
+	width: 170px
 	margin: 0 auto
 .advant 
 	display: flex 
@@ -671,7 +658,6 @@ button:focus
 	font-size: 18px 
 	text-transform: uppercase
 	font-weight: 600 
-	font-family: $titili-semi-bold
 	color: $blue
 .avant__items
 	width: 100%
@@ -687,9 +673,10 @@ button:focus
 	font-size: 16px
 	margin-top: 20px
 	font-weight: 400
+	color: #37463f
 	span 
-		font-family: $sans1-bold 
 		font-weight: $bold
+		color: $blue
 .avant__item-icon
 	width: 50px
 	img 
@@ -787,9 +774,11 @@ button:focus
 .profile__tab-item
 	padding: 20px 20px 20px 20px
 .form-title
-	color: #7f8389
+	color: #37463f
 	font-size: 15px
 	margin-bottom: 5px
+	font-weight: 400
+
 
 .form-row
 	display: flex 
@@ -806,6 +795,9 @@ select
 	padding: 0px 13px
 	color: #1a324c
 	outline: none
+	border-radius: 25px
+
+
 select
 	cursor: pointer
 	-webkit-appearance: none
@@ -844,6 +836,7 @@ input:focus
 	display: block
 	margin-bottom: 2px
 	font-size: 16px
+	color: #37463f
 .form-row--center
 	justify-content: center
 	display: flex
@@ -853,22 +846,13 @@ input:focus
 	color: #fff 
 	border: none
 	font-size: 18px
-	font-family: $titili-reg
-	font-weight: 400
+	font-weight: 600
 	padding: 6px 50px
-	box-shadow: 0px 3px 6px 0px rgba(0, 0, 0, 0.2)
 	cursor: pointer
 	width: 235px 
 	height: 39px
-	border-top: 2px solid $green-border-top
-	border-right: 2px solid $green-border-right
-	border-bottom: 2px solid $green-border-bottom
-	border-left: 2px solid $green-border-left
-.form-button:hover 
-	border-top: 2px solid $green-border-top-hover
-	border-right: 2px solid $green-border-right-hover
-	border-bottom: 2px solid $green-border-bottom-hover
-	border-left: 2px solid $green-border-left-hover
+	border-radius: 25px
+
 .form-button--user
 	padding: 3px 3px
 	display: flex 
@@ -945,7 +929,7 @@ input:focus
 		display: block
 .payment-metods__tab-text
 	font-size: 21px
-	color: #1a324c
+	color: #00703d
 	line-height: 1
 	font-weight: 700
 .back-wrapper
@@ -959,14 +943,15 @@ input:focus
 	svg 
 		width: 30px
 		margin-right: 9px
+		transform: rotate(180deg)
 		.cls1 
 			fill: #aec2d3
 .back-wrapper a:hover
 	color: $blue
 	svg
 		.cls-1 
-			fill: #83b2db
-		.cls-4 
+			//fill: #83b2db
+		.cls-2 
 			fill: $blue	
 .payment-metods__tab--papar
 	flex-direction: column
@@ -1022,16 +1007,17 @@ input:focus
 	font-size: 16px 
 	font-weight: 600 
 	color: $blue
+	max-width: 300px
 .succes-text
 	font-size: 16px
+	max-width: 300px
 	
 .form-button--succ
 	padding-left: 20px 
 	padding-right: 20px
 	margin-top: 20px
-	font-family: $titili-reg
 	font-size: 18px 
-	font-weight: 400
+	font-weight: 600
 	transition: all .5s
 	display: flex 
 	align-items: center
@@ -1088,7 +1074,7 @@ input:focus
 	a:hover 
 		color: $blue-text
 	a.active 
-		color: #38b2a3
+		color: #7ac144
 		text-decoration: underline
 		font-weight: 700
 		
@@ -1114,14 +1100,14 @@ input:focus
 	box-shadow: 0.559px 0.829px 4px 0px rgba(0, 0, 0, 0.25)
 	width: 49%
 	border-radius: 2px
-	padding: 15px 0 
+	padding: 10px 0 
 	display: flex 
 	flex-direction: column 
 	align-items: center
 	color: #3a4149
 	text-align: center
+	border-radius: 15px
 .ib__box-text
-	font-family: $titili-reg
 	font-weight: 400
 	font-size: 13px
 .ib__box-value
@@ -1145,23 +1131,18 @@ input:focus
 	box-shadow: 0px 3px 6px 0px rgba(0, 0, 0, 0.2)
 	color: #fff
 	font-size: 14px 
-	font-family: $titili-semi-bold
 	font-weight: 600
 	text-transform: uppercase
-	border-top: 2px solid $blue-border-top
-	border-right: 2px solid $blue-border-right
-	border-bottom: 2px solid $blue-border-bottom 
-	border-left: 2px solid $blue-border-left
 	transition: all .5s
+	border-radius: 25px
 .ib__btn:hover 
-	background: #05303d
-	border-top: 2px solid $blue-border-top-hover
-	border-right: 2px solid $blue-border-right-hover
-	border-bottom: 2px solid $blue-border-bottom-hover 
-	border-left: 2px solid $blue-border-left-hover
-
-
-
+	background: #00522d
+.input-wrapper--ib
+	width: 100%
+.ib__btn--light
+	background: #7ac144
+.ib__btn--light:hover
+	background: #68a33b
 //end ib__boxes style
 
 .ib-header__footer
@@ -1253,19 +1234,12 @@ input:focus
 	justify-content: center 
 	align-items: center
 	color: #fff
-	font-family: $sans3-semi-bold
 	font-weight: 600
-	border-top: 2px solid $green-border-top
-	border-right: 2px solid  $green-border-right 
-	border-bottom: 2px solid $green-border-bottom 
-	border-left: 2px solid $green-border-left
+	border-radius: 15px
+
 .table-col__btn:hover 
 	color: #fff
-	background: #008d63
-	border-top: 2px solid $green-border-top-hover
-	border-right: 2px solid  $green-border-right-hover 
-	border-bottom: 2px solid $green-border-bottom-hover 
-	border-left: 2px solid $green-border-left-hover
+	background: #68a33b
 .row-two-col .item-box.item-box--top.item-box--grey .item-box__row--ib-wrap
 	display: flex 
 	justify-content: space-between
@@ -1407,7 +1381,6 @@ input:focus
 .hesap-ac__item-button
 	width: 100px
 	height: 31px
-	font-family: $titili-semi-bold
 	font-weight: 600
 	margin: 0 2.5px
 	cursor: pointer
@@ -1417,35 +1390,24 @@ input:focus
 	outline: none
 .hesap-ac__item-button--aqua
 	background-color: $aqua
-	box-shadow: 0px 3px 6px 0px rgba(0, 0, 0, 0.2)
 	color: #fff
-	border-top: 2px solid #00ffb3
-	border-left: 2px solid #00c48a
-	border-bottom: 2px solid #008a61
-	border-right: 2px solid #00b67f
+	border: none
+	border-radius: 15px
 .hesap-ac__item-button--aqua:hover
-	background: #06855f
-	border-top: 2px solid #00d494
-	border-left: 2px solid #05996c
-	border-bottom: 2px solid #027d58
-	border-right: 2px solid #068a62
+	background: #68a33b
 .hesap-ac__item-button--grey
-	background-color: rgb(250, 250, 250)
-	box-shadow: 0px 3px 6px 0px rgba(0, 0, 0, 0.2)
 	border-width: 1px
-	border-color: $blue
+	border-color: #00703d
 	border-style: solid
+	border-radius: 15px
+	background: transparent
 
 
 
 
 .hesap-ac__item-button--grey:hover 
 	color: #fff
-	background: $blue
-	border-top: 2px solid #0983a9
-	border-left: 2px solid #075871
-	border-bottom: 2px solid #022e3b
-	border-right: 2px solid #064e64
+	background: #00703d
 .text-box__title--not-padding
 	padding-top: 0 
 	padding-bottom: 5px
@@ -1794,8 +1756,7 @@ input:focus
 .item-box__col--detail--front
 	max-width: 90px
 	min-width: 90px
-	.details-link-btn:hover 
-		color: #042732
+
 
 .item-box__col--buttons 
 	min-width: 250px
@@ -1818,8 +1779,9 @@ input:focus
 	box-shadow: 0px 3px 6px 0px rgba(0, 0, 0, 0.2)
 	color: #fff
 	font-size: 18px
+	border-radius: 25px
 .ib-header .ib-details__btn:hover
-	background-color: rgb(49, 146, 134)
+	background-color: #68a33b
 	box-shadow: 0px 3px 6px 0px rgba(0, 0, 0, 0.2)
 	color: #fff
 .back-wrapper
@@ -1924,7 +1886,7 @@ input:focus
 .table-col--grey
 	color: #999999
 .table-col--green
-	color: #3db2a3
+	color: #7ac144
 .item-box.item-box-ib-herek
 	padding-top: 35px 
 	padding-bottom: 0px
@@ -1953,13 +1915,11 @@ input:focus
 	box-shadow: 0px 3px 6px 0px rgba(0, 0, 0, 0.2)
 .form-button--succ--blue:hover 
 	background-color: rgb(17, 32, 49)
-.item-header-desktop
-	font-family: $titili-semi-bold 
-	font-weight: 600
+
 .contact-wrapper--inside .contact-wrapper__button
 	padding: 10px 7px
 .item-box.item-box--grey--ib.item-box--det .text.col-title.col-title--meta
-	font-family: $poppins
+	font-family: $mont
 	font-weight: 400
 .table-hg
 	.table-row .table-col:nth-child(3)
@@ -1979,7 +1939,7 @@ input:focus
 	font-family: $titili-reg 
 	font-weight: 400
 .open-account__link 
-	font-family: $poppins 
+	font-family: $mont 
 	font-weight: 700
 .profile__tabs-wrappe--forgotten
 	text-align: center
@@ -1990,6 +1950,64 @@ input:focus
 		width: 100%
 	.profile__tab:before 
 		display: none
+.succes-text-bagleti
+	max-width: 100%
+.ib-table,
+	.table-header
+		.table-col
+			position: relative
+		.table-col:before 
+			content: ''
+			position: absolute
+			left: -2px
+			bottom: 10%
+			transform: translateX(-100%)
+			border: 6px solid transparent
+			border-top: 6px solid #c3c5c9
+		.table-col:after
+			content: ''
+			position: absolute
+			left: -2px
+			bottom: 55%
+			transform: translateX(-100%) translateY(0%)
+			border: 6px solid transparent
+			border-bottom: 6px solid #00703d
+		// .table-col:hover:before
+		// 	border-top: 6px solid #00703d
+		// .table-col:hover:after
+		// 	border-bottom: 6px solid #00703d
+		.table-col:last-child:before 
+			display: none 
+		.table-col:last-child:after
+			display: none 
+.ib-details-table
+	.table-header
+		.table-col
+			position: relative
+		.table-col:before 
+			content: ''
+			position: absolute
+			left: -2px
+			bottom: 25%
+			transform: translateX(-100%)
+			border: 6px solid transparent
+			border-top: 6px solid #c3c5c9
+		.table-col:after
+			content: ''
+			position: absolute
+			left: -2px
+			bottom: 55%
+			transform: translateX(-100%) translateY(0%)
+			border: 6px solid transparent
+			border-bottom: 6px solid #00703d
+		// .table-col:hover:before
+		// 	border-top: 6px solid #00703d
+		// .table-col:hover:after
+		// 	border-bottom: 6px solid #00703d
+		.table-col:last-child:before 
+			display: none 
+		.table-col:last-child:after
+			display: none 
 @import "media"
 
 

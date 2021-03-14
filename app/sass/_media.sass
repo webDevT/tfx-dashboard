@@ -21,15 +21,13 @@
 	.header__user
 		img 
 			width: 3.125vw
-			margin-right: 0
+			margin-right: 0.5vw
 	.header__user-wrap
 		padding: 1.094vw
 		padding-left: 4.688vw
 		padding-right: 4.688vw
 		display: flex 
 		justify-content: center
-	.header__user-name
-		display: none
 	.header__menu ul li
 		padding: 0 2.500vw
 		margin: 0
@@ -286,15 +284,16 @@
 		margin-top: 1.563vw
 	.education-video-text
 		display: flex
-		font-size: 3.734vw
+		font-size: 3.3vw
 	.education-video
 		padding-left: 0 
 		padding-right: 0
 		padding: 2.813vw 0
 		width: 100%
 		justify-content: space-between
-		padding-left: 4vw
-		padding-right: 4vw
+		padding-left: 2vw
+		padding-right: 2vw
+		border-radius: 2vw
 		span 
 			margin-left: 1.5vw
 			font-family: $sans1
@@ -305,6 +304,12 @@
 			min-width: 8.750vw
 			min-height: 8.750vw
 			margin-left: 1.5vw
+		img
+			width: 8.750vw
+			height: 8.750vw
+			min-width: 8.750vw
+			min-height: 8.750vw
+			margin-left: 1.5v
 	.education-videos 
 		flex-direction: column
 	.education-video-text
@@ -998,7 +1003,7 @@
 	.ib__btn
 		text-transform: none
 		height: 10.625vw
-		border-radius: 0.313vw
+		border-radius: 5vw
 		box-shadow: 0px 0.313vw 0.938vw 0px rgba(0, 0, 0, 0.2)
 		background-color: rgb(26, 50, 76)
 		font-size: 3.731vw
@@ -1049,7 +1054,7 @@
 			font-size: 3.731vw
 			width: 100%
 			height: 10.625vw
-			border-radius: 0.313vw
+			border-radius: 5vw
 			box-shadow: 0px 0.313vw 0.938vw 0px rgba(0, 0, 0, 0.2)
 	.back-wrapper a
 		display: flex 
@@ -1136,6 +1141,15 @@
 		min-width: 0
 	.ib-header__footer.ib-header__footer--herk
 		padding-top: 0
+	.footer__container
+		justify-content: space-between
+	.footer-left 
+		position: static
+		transform: translate(0)
+	.table-row--ib.table-row .table-col__btn
+		border-radius: 4vw
+	.ib__btn
+		background-color: #7ac144
 
 
 
@@ -1197,7 +1211,7 @@
 @media only screen and (max-width : 480px)
 	/**/
 	.top-header
-		min-height: 10.938vw
+		min-height: 0vw
 	.header 
 		font-size: 3.466vw
 	.header__user
@@ -1206,8 +1220,8 @@
 			width: 6.250vw
 	.header__user-wrap
 		padding: 1vw
-		padding-left: 4vw
-		padding-right: 4vw
+		padding-left: 3vw
+		padding-right: 3vw
 	.header__menu ul li
 		padding: 0 2vw
 		svg 
@@ -1275,6 +1289,37 @@
 		min-width: 7.8vw
 	.ib-details-table .table-row .table-col:nth-child(3)
 		min-width: 13vw
+	.menu-link:hover:before,
+	.menu-link.active:before 
+		height: 1.8vw
+		left: 1vw
+	.item-box
+		border-radius: 2vw
+	.hesap-ac__item-button,
+	.item-gercec .item-gercec-col-wrapper-btn,
+	.item-gercec-col.active .item-gercec-col-wrapper-btn,
+	.item-gercec-col2.active .item-gercec-col-wrapper-btn
+		border-radius: 7vw
+	.contact-wrapper__button--aqua
+		border-radius: 2vw
+	.contact-wrapper__button
+		border-radius: 2vw
+	.mobil-platforms__button
+		border-radius: 5vw
+	.item-box.contact-wrapper.item-box-not-top-padding
+		border-top-left-radius: 0
+		border-top-right-radius: 0
+	.item-box.item-box--top.item-box-not-top-padding
+		border-bottom-left-radius: 0
+		border-bottom-right-radius: 0
+	.ib-table
+		.table-header
+			.table-col
+				position: relative
+			.table-col:before 
+				display: none
+			.table-col:after
+				display: none
 
 
 
